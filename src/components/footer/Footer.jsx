@@ -1,8 +1,5 @@
 import React from 'react'
- import gstore from "./images/gstore.png";
- import apple from "./images/apple.png"
- import Social from "./images/Social.png"
- import Guarantee from "./images/Guarantee.png"
+import "../styles/footer.css";
 
 export const Footer = () => {
     const footer1=[
@@ -22,14 +19,14 @@ export const Footer = () => {
                 <div  className="Footerclassdiv2">
                     <h5>EXPERIENCE MYNTRA APP ON MOBILE</h5>
                      <div>
-                        <img className="footericon1" src={gstore} alt="" />
-                        <img className="footericon2" src={apple} alt="" />
+                        <img className="footericon1" src="https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/Sweta_myntra/src/images/gstore.png?raw=true" alt="" />
+                        <img className="footericon2" src="https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/Sweta_myntra/src/images/apple.png?raw=true" alt="" />
                     </div>
                     <h5>KEEP IN TOUCH</h5>
-                    <img src={Social} alt="" />
+                    <img src="https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/Sweta_myntra/src/images/Social.png?raw=true" alt="" />
                 </div>
                 <div>
-                    <img className="footer4" src={Guarantee} alt="" />
+                    <img className="footer4" src="https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/Sweta_myntra/src/images/Guarantee.png?raw=true" alt="" />
                 </div>
             </div>
             <div className="footer5">
