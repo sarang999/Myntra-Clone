@@ -1,6 +1,8 @@
 import { AppBar, Toolbar, makeStyles, Box, Typography} from "@material-ui/core";
 import { SearchBar } from "./SearchBar";
 import { Iconbuttons } from "./Iconbuttons";
+// import {Link} from "react-router-dom"
+import {Men} from "./Men"
 
 
 
@@ -45,7 +47,11 @@ export  const Header = () =>
     return(
         <AppBar className={classes.header}>
             <Toolbar>
+                {/* <Link to="/"> */}
+                <Box>
                  <img src= {logoUrl} className={classes.logo}/>
+                 </Box>
+                 {/* </Link> */}
                  <Box component="span" className={classes.container}>
                         <Typography className = {classes.subHeading}>Men</Typography>
                         <Typography className = {classes.subHeading}>Woman</Typography>

@@ -10,7 +10,8 @@ const useStyle = makeStyles(
 
         image:{
             width: "90%",
-            height: 550
+            height: 550,
+            marginLeft: '5%'
         }
     }
 )

@@ -30,7 +30,7 @@ export const Footer = () => {
                 </div>
             </div>
             <div className="footer5">
-            <p>In case of any concern,<span className="footerspan">Contact Us</span></p>
+            <p className="footerspan">In case of any concern,<span style={{color: "blue"}}>Contact Us</span></p>
             <p>© 2021 www.myntra.com. All rights reserve</p>
             </div>      
         </div>
