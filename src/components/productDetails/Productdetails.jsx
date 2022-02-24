@@ -5,6 +5,7 @@ import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlin
 import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
 import LocalOfferOutlinedIcon from '@mui/icons-material/LocalOfferOutlined';
 import EventNoteOutlinedIcon from '@mui/icons-material/EventNoteOutlined';
+import {Footer} from "../footer/Footer"
 
 
 
@@ -257,8 +258,10 @@ export const Productdeatils = () => {
                             </div>
                         </div>
                 </div>
-
+                <Footer/>
             </Box>
+
+           
        
     )
 }
