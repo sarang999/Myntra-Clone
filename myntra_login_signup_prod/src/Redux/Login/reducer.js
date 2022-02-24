@@ -1,4 +1,4 @@
-import { LOGIN_FAIL, LOGIN_REQ, LOGIN_SUCCESS, LOGOUT_REQ } from "./ActionType"
+import { LOGIN_FAILED, LOGIN_REQ, LOGIN_SUCCESS, LOGOUT_REQ } from "./ActionType"
 
 
 const loginstate={
@@ -31,7 +31,7 @@ export const loginReducer=(state=loginstate,{type,payload})=>{
                 cardnumber:payload.cardnumber,
                 phoneNumber:payload.mobilenumber
             }
-        case LOGIN_FAIL:
+        case LOGIN_FAILED:
             return{
                 ...state,
                 timeError:true,
