@@ -59,13 +59,16 @@
 }
 
 .input1{
-    width: 30px;
-    height: 4.5vh;
-    border: none;
-    padding: 0px 5px;
+    width: 42px;
+    /* height: 4.5vh; */
+    height: 34.5px;
+    padding: px 5px;
     outline: none;
     font-size: 15px;
+    border: 1px solid #dcdddf;
     color: #282C3FCC;
+    border-right: none;
+    box-sizing: border-box;
 }
 .input2{
     width: 75%;
@@ -80,7 +83,7 @@
 .inputdiv{
     width: 99%;
     height: 5vh;
-    border: 1px solid grey;
+    /* border: 1px solid grey; */
     margin-top:15px;
 }
 
@@ -113,7 +116,21 @@
     letter-spacing: 1px;
     margin-top: 15px;
 }
-
+.login-useername{
+    width: 100%;
+    height: 5vh;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(255,63,108);
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px 25px;
+    font-weight:bold;
+    letter-spacing: 1px;
+    margin-top: 2%;
+    margin-bottom: 5%;
+}
 .loginbutton + p{
     color: #282C3FCC;
     font-size: 13px;
@@ -127,7 +144,7 @@
 
 }
 
-/* Otp CSS */
+/* Otp CSS --------------------------------------------------------------*/
 .otp{
     width: 100%;
     height: 93vh;
@@ -152,7 +169,7 @@
     height: 90px;
 }
 .otp-main > input{
-    width: 75%;
+    width: 100%;
     height: 4.5vh;
     border: none;
     outline: none;
@@ -163,6 +180,20 @@
     box-sizing: border-box;
     margin-top: 5%;
     margin-bottom: 5%;
+}
+.otp-main> button{
+    width: 100%;
+    height: 5vh;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(255,63,108);
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px 25px;
+    font-weight:bold;
+    letter-spacing: 1px;
+    margin-top: 15px;
 }
 
 /* ----------------Verified CSS --------------------------------------- */
@@ -321,6 +352,67 @@
     font-weight:bold;
     letter-spacing: 1px;
 }
+
+/* ------------------------Mobile number form -------------- */
+.numberform-input{
+
+    height: 35px;
+    width: 262px;
+   
+    box-sizing: border-box;
+    padding: 11px 12px 11px 12px;
+    border: 1px solid #dcdddf;
+    margin-bottom: 20px;
+    margin-top: 12%;
+}
+.numberform-button{
+    width: 100%;
+    height: 5vh;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(255,63,108);
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px 25px;
+    font-weight:bold;
+    letter-spacing: 1px;
+  
+
+}
+
+/* ------------------Verify Otp Css ------------------------ */
+.otpverification-input{
+
+    height: 35px;
+    width: 100%;
+   
+    box-sizing: border-box;
+    padding: 11px 12px 11px 12px;
+    border: 1px solid #dcdddf;
+    margin-bottom: 30px;
+    margin-top: 12%;
+}
+.otpverification-button{
+    width: 100%;
+    height: 5vh;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(255,63,108);
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px 25px;
+    font-weight:bold;
+    letter-spacing: 1px;
+    margin-top: 3%;
+}
+
+
+
+
+
+
 
 
 
