@@ -17,14 +17,12 @@ const useStyle = makeStyles({
     
     main: {
         width: '99%',
-        border: '1px solid black',
         display: 'flex'
     },
 
     flexDiv:{
-        width: '49%',
-        border: '1px solid blue'
-       
+        width: '50%',
+        marginRight: 30
 
     },
     star:{
@@ -95,6 +93,16 @@ const useStyle = makeStyles({
 
       imgSize: {
           width:'100%'
+      },
+      leftImg: {
+          display: "flex",
+          width: "100%",
+         
+      },
+
+      leftDivs: {
+          width: "48%",
+          marginLeft: 10
       }
      
 
@@ -113,17 +121,44 @@ export const Productdeatils = () => {
             <Box className={classes.container}>
                 
                 <div>
-                    <p>
-                       Home/Clothing/Women Clothing/Dresses/ <span style={{fontWeight: "bolder"}}>SASSAFRAS Dresses/More By SASSAFRAS</span>
-                    </p>
+                        <p>
+                        Home/Clothing/Women Clothing/Dresses/ <span style={{fontWeight: "bolder"}}>SASSAFRAS Dresses/More By SASSAFRAS</span>
+                        </p>
 
-                    <div className={classes.main}>
-                         <div className={classes.flexDiv}>
-                             
-                         </div>
+                        <div className={classes.main}>
+                            <div className={classes.flexDiv}>
+                                <div className={classes.leftImg}>
+                                     <div className={classes.leftDivs}>
+                                         <img style={{width: '100%'}} src="https://raw.githubusercontent.com/ShaikRiyazuddin/Myntra_Clone/Sweta_myntra/src/images/big%20image1.webp"/>
+                                     </div>
+                                     <div className={classes.leftDivs}>
+                                         <img style={{width: '100%'}}  src="https://raw.githubusercontent.com/ShaikRiyazuddin/Myntra_Clone/Sweta_myntra/src/images/big2.webp"/>
+                                     </div>
+                                </div>
+                                
+                                <div className={classes.leftImg}>
+                                      <div className={classes.leftDivs}>
+                                          <img style={{width: '100%'}}  src="https://raw.githubusercontent.com/ShaikRiyazuddin/Myntra_Clone/Sweta_myntra/src/images/big3.webp"/>
+                                      </div>
+                                      <div className={classes.leftDivs}>
+                                          <img style={{width: '100%'}}  src="https://raw.githubusercontent.com/ShaikRiyazuddin/Myntra_Clone/Sweta_myntra/src/images/big4.webp"/>
+                                      </div>
+
+                                </div >
+                                
+                                <div  className={classes.leftImg}>
+                                        <div className={classes.leftDivs}>
+                                            <img style={{width: '100%'}}  src="https://raw.githubusercontent.com/ShaikRiyazuddin/Myntra_Clone/Sweta_myntra/src/images/big5.webp"/>
+                                        </div>
+                                        <div className={classes.leftDivs}>
+                                            <img style={{width: '100%'}}  src="https://raw.githubusercontent.com/ShaikRiyazuddin/Myntra_Clone/Sweta_myntra/src/images/big2.webp"/>
+                                        </div>
+                                </div>
+                                
+                        </div>
                          
                          
-                         <div className={classes.flexDiv}>
+                        <div className={classes.flexDiv}>
                              <h2>SASSAFRAS</h2>
                              <h3 style={{color: 'grey', fontWeight:'lighter'}}>Black & Pink Floral Printed Wrap Dress</h3>
                              <p>4.4 <StarIcon  className={classes.star}/>|13.8k Ratings</p>
@@ -169,11 +204,11 @@ export const Productdeatils = () => {
                              <h3>Material & Care</h3>
                              <p>100% polyester</p>
                              <p>Machine-wash</p>
-                         </div>
+                        </div>
                          
                     </div>
 
-                    <div>
+                       <div>
                              <h3>SIMILAR PRODUCTS</h3>
                              <div className={classes.similar}>
                                  <div className={classes.imgs}>
@@ -185,42 +220,42 @@ export const Productdeatils = () => {
 
                                  <div className={classes.imgs}>
                                  <img className={classes.imgSize} src="https://raw.githubusercontent.com/ShaikRiyazuddin/Myntra_Clone/Sweta_myntra/src/images/pic2.webp"/>
-                                 <h4>Nayo</h4>
-                                 <p>Floral A line dress</p>
-                                 <h5>Rs. 714 <span style={{textDecoration: "line-through", color: 'grey', fontWeight:"lighter"}}>Rs. 1299</span> <span style={{color: 'red'}}>(66% 0ff)</span></h5>
+                                 <h4>SASSFRAS</h4>
+                                 <p>Accordin pleant A-line dress</p>
+                                 <h5>Rs. 790 <span style={{textDecoration: "line-through", color: 'grey', fontWeight:"lighter"}}>Rs. 1099</span> <span style={{color: 'red'}}>(67% 0ff)</span></h5>
                                  </div>
 
                                  <div className={classes.imgs}>
                                  <img className={classes.imgSize} src="https://raw.githubusercontent.com/ShaikRiyazuddin/Myntra_Clone/Sweta_myntra/src/images/pic3.webp"/>
-                                 <h4>Nayo</h4>
+                                 <h4>Harpa</h4>
                                  <p>Floral A line dress</p>
-                                 <h5>Rs. 714 <span style={{textDecoration: "line-through", color: 'grey', fontWeight:"lighter"}}>Rs. 1299</span> <span style={{color: 'red'}}>(66% 0ff)</span></h5>
+                                 <h5>Rs. 814 <span style={{textDecoration: "line-through", color: 'grey', fontWeight:"lighter"}}>Rs. 2299</span> <span style={{color: 'red'}}>(66% 0ff)</span></h5>
                                  </div>
 
                                  <div className={classes.imgs}>
                                  <img  className={classes.imgSize} src="https://raw.githubusercontent.com/ShaikRiyazuddin/Myntra_Clone/Sweta_myntra/src/images/pic4.webp"/>
-                                 <h4>Nayo</h4>
+                                 <h4>PlusS</h4>
                                  <p>Floral A line dress</p>
-                                 <h5>Rs. 714 <span style={{textDecoration: "line-through", color: 'grey', fontWeight:"lighter"}}>Rs. 1299</span> <span style={{color: 'red'}}>(66% 0ff)</span></h5>
+                                 <h5>Rs. 614 <span style={{textDecoration: "line-through", color: 'grey', fontWeight:"lighter"}}>Rs. 1200</span> <span style={{color: 'red'}}>(66% 0ff)</span></h5>
                                  </div>
 
                                  <div className={classes.imgs}>
                                  <img className={classes.imgSize} src="https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/Sweta_myntra/src/images/pic5.jpg?raw=true"/>
-                                 <h4>Nayo</h4>
-                                 <p>Floral A line dress</p>
-                                 <h5>Rs. 714 <span style={{textDecoration: "line-through", color: 'grey', fontWeight:"lighter"}}>Rs. 1299</span> <span style={{color: 'red'}}>(66% 0ff)</span></h5>
+                                 <h4>Anouk</h4>
+                                 <p>Floral Cotton kurta dress</p>
+                                 <h5>Rs. 1000 <span style={{textDecoration: "line-through", color: 'grey', fontWeight:"lighter"}}>Rs. 2299</span> <span style={{color: 'red'}}>(60% 0ff)</span></h5>
                                  </div>
 
                                  <div className={classes.imgs}>
                                  <img className={classes.imgSize} src="https://raw.githubusercontent.com/ShaikRiyazuddin/Myntra_Clone/Sweta_myntra/src/images/pic6.webp"/>
-                                 <h4>Nayo</h4>
-                                 <p>Floral A line dress</p>
-                                 <h5>Rs. 714 <span style={{textDecoration: "line-through", color: 'grey', fontWeight:"lighter"}}>Rs. 1299</span> <span style={{color: 'red'}}>(66% 0ff)</span></h5>
+                                 <h4>U&F</h4>
+                                 <p>Floral Maxi dress</p>
+                                 <h5>Rs. 1814 <span style={{textDecoration: "line-through", color: 'grey', fontWeight:"lighter"}}>Rs. 2799</span> <span style={{color: 'red'}}>(56% 0ff)</span></h5>
                                  </div>
 
                                  
-                             </div>
-                         </div>
+                            </div>
+                        </div>
                 </div>
 
             </Box>
