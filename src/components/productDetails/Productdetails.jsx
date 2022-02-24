@@ -177,42 +177,42 @@ export const Productdeatils = () => {
                              <h3>SIMILAR PRODUCTS</h3>
                              <div className={classes.similar}>
                                  <div className={classes.imgs}>
-                                 <img className={classes.imgSize} src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/10555740/2019/9/4/9895a8a7-c979-4efc-915d-196085d1026d1567579564836-Nayo-Women-Dresses-7681567579563996-1.jpg"/>
+                                 <img className={classes.imgSize} src="https://raw.githubusercontent.com/ShaikRiyazuddin/Myntra_Clone/Sweta_myntra/src/images/pic1.webp"/>
                                  <h4>Nayo</h4>
                                  <p>Floral A line dress</p>
                                  <h5>Rs. 714 <span style={{textDecoration: "line-through", color: 'grey', fontWeight:"lighter"}}>Rs. 1299</span> <span style={{color: 'red'}}>(66% 0ff)</span></h5>
                                  </div>
 
                                  <div className={classes.imgs}>
-                                 <img className={classes.imgSize} src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/10555740/2019/9/4/9895a8a7-c979-4efc-915d-196085d1026d1567579564836-Nayo-Women-Dresses-7681567579563996-1.jpg"/>
+                                 <img className={classes.imgSize} src="https://raw.githubusercontent.com/ShaikRiyazuddin/Myntra_Clone/Sweta_myntra/src/images/pic2.webp"/>
                                  <h4>Nayo</h4>
                                  <p>Floral A line dress</p>
                                  <h5>Rs. 714 <span style={{textDecoration: "line-through", color: 'grey', fontWeight:"lighter"}}>Rs. 1299</span> <span style={{color: 'red'}}>(66% 0ff)</span></h5>
                                  </div>
 
                                  <div className={classes.imgs}>
-                                 <img className={classes.imgSize} src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/10555740/2019/9/4/9895a8a7-c979-4efc-915d-196085d1026d1567579564836-Nayo-Women-Dresses-7681567579563996-1.jpg"/>
+                                 <img className={classes.imgSize} src="https://raw.githubusercontent.com/ShaikRiyazuddin/Myntra_Clone/Sweta_myntra/src/images/pic3.webp"/>
                                  <h4>Nayo</h4>
                                  <p>Floral A line dress</p>
                                  <h5>Rs. 714 <span style={{textDecoration: "line-through", color: 'grey', fontWeight:"lighter"}}>Rs. 1299</span> <span style={{color: 'red'}}>(66% 0ff)</span></h5>
                                  </div>
 
                                  <div className={classes.imgs}>
-                                 <img  className={classes.imgSize} src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/10555740/2019/9/4/9895a8a7-c979-4efc-915d-196085d1026d1567579564836-Nayo-Women-Dresses-7681567579563996-1.jpg"/>
+                                 <img  className={classes.imgSize} src="https://raw.githubusercontent.com/ShaikRiyazuddin/Myntra_Clone/Sweta_myntra/src/images/pic4.webp"/>
                                  <h4>Nayo</h4>
                                  <p>Floral A line dress</p>
                                  <h5>Rs. 714 <span style={{textDecoration: "line-through", color: 'grey', fontWeight:"lighter"}}>Rs. 1299</span> <span style={{color: 'red'}}>(66% 0ff)</span></h5>
                                  </div>
 
                                  <div className={classes.imgs}>
-                                 <img className={classes.imgSize} src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/10555740/2019/9/4/9895a8a7-c979-4efc-915d-196085d1026d1567579564836-Nayo-Women-Dresses-7681567579563996-1.jpg"/>
+                                 <img className={classes.imgSize} src="https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/Sweta_myntra/src/images/pic5.jpg?raw=true"/>
                                  <h4>Nayo</h4>
                                  <p>Floral A line dress</p>
                                  <h5>Rs. 714 <span style={{textDecoration: "line-through", color: 'grey', fontWeight:"lighter"}}>Rs. 1299</span> <span style={{color: 'red'}}>(66% 0ff)</span></h5>
                                  </div>
 
                                  <div className={classes.imgs}>
-                                 <img className={classes.imgSize} src="https://assets.myntassets.com/f_webp,h_560,q_90,w_420/v1/assets/images/10555740/2019/9/4/9895a8a7-c979-4efc-915d-196085d1026d1567579564836-Nayo-Women-Dresses-7681567579563996-1.jpg"/>
+                                 <img className={classes.imgSize} src="https://raw.githubusercontent.com/ShaikRiyazuddin/Myntra_Clone/Sweta_myntra/src/images/pic6.webp"/>
                                  <h4>Nayo</h4>
                                  <p>Floral A line dress</p>
                                  <h5>Rs. 714 <span style={{textDecoration: "line-through", color: 'grey', fontWeight:"lighter"}}>Rs. 1299</span> <span style={{color: 'red'}}>(66% 0ff)</span></h5>
