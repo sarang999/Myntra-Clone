@@ -106,11 +106,11 @@ export const ProductsBody = () => {
          <div className = {styles.topLeft}>
              <div className = {styles.topFlex}>
                  <p>Home / Clothing / </p>
-                 <p style = {{marginLeft:"4px"}}> Men's Clothing</p>
+                 <p style = {{marginLeft:"-14px"}}> Men's Clothing</p>
              </div>
              <div className = {styles.topFlexMid}>
                  <p>Men Items - </p>
-                 <p>{dataLength} items</p>
+                 <p style = {{marginLeft:"-14px"}}>{dataLength} items</p>
              </div>
              <div className = {styles.topFlexBot}>
                  <p>FILTERS</p>
