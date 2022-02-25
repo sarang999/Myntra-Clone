@@ -1,9 +1,10 @@
 import { loginReducer } from "./Login/reducer"
 import { applyMiddleware, combineReducers, createStore, compose } from "redux";
 import thunk from "redux-thunk";
-
+import { wishlistReducer } from "./Wishlist/reducer"
 const rootreducer = combineReducers({
-    loginred:loginReducer,
+    loginred: loginReducer,
+    wishlist:wishlistReducer,
 })
 
 const store = createStore(rootreducer,

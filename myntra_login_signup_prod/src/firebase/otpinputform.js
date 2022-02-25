@@ -1,11 +1,12 @@
 import React from 'react';
 import firebase from './firebase';
-
+import { Link } from "react-router-dom";
+import "../components/Login/login.css";
 class OtpVerification extends React.Component {
   handleChange = (e) =>{
       const { name, value } = e.target;
     this.setState({
-        [name]: value
+      [name]: value
       })
   }
   configureCaptcha = () =>{
@@ -27,7 +28,7 @@ class OtpVerification extends React.Component {
       // User signed in successfully.
       const user = result.user;
       console.log(JSON.stringify(user))
-        alert("Mobile Number Verified!");
+        alert("Mobile Number Verified! Click on CONTINUE");
       // ...
     }).catch((error) => {
       // User couldn't sign in (bad verification code?)
@@ -42,6 +43,9 @@ class OtpVerification extends React.Component {
           <input className='otpverification-input' type="number" name="otp" placeholder="OTP Number" required onChange={this.handleChange}/>
           <button className='otpverification-button' type="submit">Submit</button>
         </form>
+        <Link to="/otpverified">
+          <button className='verify-otp-check'>COUNTINUE</button>
+          </Link>
       </div>
     )
   }

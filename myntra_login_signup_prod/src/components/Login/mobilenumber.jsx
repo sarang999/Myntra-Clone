@@ -4,7 +4,7 @@ import login_image from "./LoginImages/login_image.webp";
 import "./login.css";
 import { useDispatch, useSelector } from 'react-redux'
 import {loginProcess} from "../../Redux/Login/Action"
-import {Navigate} from "react-router-dom";
+import {Navigate,Link} from "react-router-dom";
 // import { useHistory } from "react-router-dom";
 import MobilenumberForm from "../../firebase/mobileinputform";
 
@@ -41,7 +41,7 @@ export const  MobileNumber = () => {
                     </div>
                     <div className="inputcontainer">
                         <div>
-                            <span className="heading">Login</span><span className="heading2">or</span><span className="heading1">Signup</span><br/>
+                            <span className="heading">Signup</span><span className="heading2">with</span><span className="heading1">Mobile</span><br/>
                         <div className="inputdiv">
                             
                             {/* <input className="input1" type="text" value={`+91`}
@@ -56,11 +56,9 @@ export const  MobileNumber = () => {
                             { handleLogin() }}>CONTINUE
                             </button> */}
                             <MobilenumberForm/>
-
+                           
                             <p className="terms">By continuing, I agree to the <span className="conditions">Terms of Use</span> & <span className="conditions">Privacy Policy</span></p> 
                           
-                            
-
                             <div className="verified-line">
                             <div><hr/></div>
                             <div>OR</div>

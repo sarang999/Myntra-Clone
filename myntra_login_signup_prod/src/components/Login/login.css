@@ -8,7 +8,7 @@
 }
 .logindiv{
     width:400px;
-    height: 90vh;
+    height: 94vh;
     background-color: white;
     margin: auto;
 }
@@ -62,7 +62,7 @@
     width: 42px;
     /* height: 4.5vh; */
     height: 34.5px;
-    padding: px 5px;
+    padding: 0px 5px;
     outline: none;
     font-size: 15px;
     border: 1px solid #dcdddf;
@@ -84,13 +84,13 @@
     width: 99%;
     height: 5vh;
     /* border: 1px solid grey; */
-    margin-top:15px;
+    margin-top:-20px;
 }
 
 .terms{
     width: 100%;
     font-size: 13px;
-    margin-top: 15px;
+    margin-top: 8px;
     color: #282C3FCC;
 }
 .conditions{
@@ -407,6 +407,75 @@
     letter-spacing: 1px;
     margin-top: 3%;
 }
+/* ---------------------------Mobile Otp button CSS--------------------- */
+
+.mobile-otp-button{
+    width: 100%;
+    height: 5vh;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(255,63,108);
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px 25px;
+    font-weight:bold;
+    letter-spacing: 1px;
+    margin-top: 3%;
+}
+
+/* ------------Verify otp navigate button---------------------- */
+
+.verify-otp-check{
+    width: 100%;
+    height: 5vh;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(255,63,108);
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px 25px;
+    font-weight:bold;
+    letter-spacing: 1px;
+    margin-top: 3%;
+}
+
+/* -------------------OTP Verified------------------------ */
+.create-signup{
+    width: 100%;
+    height: 5vh;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(255,63,108);
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px 25px;
+    font-weight:bold;
+    letter-spacing: 1px;
+    margin-top: 3%;
+}
+
+/* -----------------Username Verified ------------------- */
+
+.send-to-username{
+    width: 100%;
+    height: 5vh;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(255,63,108);
+    font-size: 14px;
+    cursor: pointer;
+    padding: 10px 25px;
+    font-weight:bold;
+    letter-spacing: 1px;
+    margin-top: 3%;
+}
+
+
+
 
 
 
