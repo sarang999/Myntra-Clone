@@ -2,7 +2,10 @@ import styles from "./productsTop.module.css";
 import { IoIosArrowDown } from 'react-icons/io';
 
 
+
 export const  ProductsTop = () => {
+
+    
     return (
         <div className={styles.products}>
      
@@ -11,10 +14,10 @@ export const  ProductsTop = () => {
                 <div class = {styles.topLeft}>
                     <div class = {styles.topFlex}>
                         <p>Home / Clothing / </p>
-                        <p style = {{marginLeft:"4px"}}> Men T-Shirts</p>
+                        <p style = {{marginLeft:"4px"}}> Men's Clothing</p>
                     </div>
                     <div class = {styles.topFlexMid}>
-                        <p>Men T-Shirts - </p>
+                        <p>Men Items - </p>
                         <p>150 items</p>
                     </div>
                     <div class = {styles.topFlexBot}>
