@@ -1,6 +1,6 @@
 import React from 'react'
 import "./BagNavbar.css"
-import offerImg from "./Images/offers.webp";
+import offerImg from "../Images/offers.webp";
 export const Pincode = () => {
     return (
         <div>

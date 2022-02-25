@@ -2,7 +2,7 @@ import React from 'react';
 import { Pincode } from "./Pincode";
 import { BagProduct } from "./BagProduct";
 import { Apply } from "./Apply";
-import belowImage from "./Images/belowImage.png"
+import belowImage from "../Images/belowImage.png"
 import "./BagNavbar.css"
 
 export const MainBag = () => {
