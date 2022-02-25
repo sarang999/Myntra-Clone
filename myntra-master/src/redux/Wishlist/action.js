@@ -80,7 +80,7 @@ export const patchWishFailure = (err) => {
 export const postWishData = payload => dispatch => {
     dispatch( postWishRequest() )
 
-    return axios.post("https://masai-project.herokuapp.com/wihlist", payload )
+    return axios.post("https://ecommyntra-fake-server-app.herokuapp.com/wishlist", payload )
     .then(res => {
         dispatch( postWishSuccess() )
         dispatch( getWishData() )
@@ -93,7 +93,7 @@ export const postWishData = payload => dispatch => {
 export const patchWishData = (idx, sizex) => dispatch => {
     dispatch( patchWishRequest() )
 
-    return axios.patch(`https://masai-project.herokuapp.com/wihlist/${idx}`, { selected_size: `${sizex}` } )
+    return axios.patch(`https://ecommyntra-fake-server-app.herokuapp.com/wishlist/${idx}`, { selected_size: `${sizex}` } )
     .then(res => {
         dispatch( patchWishSuccess() )
         dispatch( getWishData() )
@@ -106,7 +106,7 @@ export const patchWishData = (idx, sizex) => dispatch => {
 export const patchWishEmptySize = (idx) => dispatch => {
     dispatch( patchWishRequest() )
 
-    return axios.patch(`https://masai-project.herokuapp.com/wihlist/${idx}`, { selected_size: "" } )
+    return axios.patch(`https://ecommyntra-fake-server-app.herokuapp.com/wishlist/${idx}`, { selected_size: "" } )
     .then(res => {
         dispatch( patchWishSuccess() )
         dispatch( getWishData() )
@@ -119,7 +119,7 @@ export const patchWishEmptySize = (idx) => dispatch => {
 export const deleteWishData = (idx) => dispatch => {
     dispatch( deleteWishRequest() )
 
-    return axios.delete(`https://masai-project.herokuapp.com/wihlist/${idx}` )
+    return axios.delete(`https://ecommyntra-fake-server-app.herokuapp.com/wishlist/${idx}` )
     .then(res => {
         dispatch( deleteWishSuccess() )
         dispatch( getWishData() )
@@ -132,7 +132,7 @@ export const deleteWishData = (idx) => dispatch => {
 export const getWishData = payload => dispatch => {
     dispatch( getWishRequest() )
 
-    return axios.get("https://masai-project.herokuapp.com/wihlist", payload )
+    return axios.get("https://ecommyntra-fake-server-app.herokuapp.com/wishlist", payload )
     .then(res => {
         dispatch( getWishSuccess(res.data) )
     })

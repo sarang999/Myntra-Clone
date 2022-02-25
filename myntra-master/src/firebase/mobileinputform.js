@@ -3,18 +3,24 @@ import firebase from './firebase'
 import "../components/Login/login.css";
 import "../components/Login/login.css";
 // import { Navigation } from "./navigation";
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import { useNavigate } from 'react-router-dom';
 
 
 
 class MobilenumberForm extends React.Component {
-    
+  
     handleChange = (e) =>{
       const {name, value } = e.target
       this.setState({
           [name]: value
         })
-    }
+  }
+  
+  navigateOtp = () => {
+    const navigate = useNavigate();
+    navigate('/otpverification');
+  }
     configureCaptcha = () =>{
       window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('sign-in-button', {
         'size': 'invisible',
@@ -43,7 +49,7 @@ class MobilenumberForm extends React.Component {
         // ...
         
         alert("OTP sent Click on go to otp Page");
-        
+        this.navigateOtp();
       })
         // <Link to="/otpverification" />
       .catch((error) => {
@@ -53,7 +59,8 @@ class MobilenumberForm extends React.Component {
             //  .then(() => { (<Link to="/otpverification"></Link>) }
             //  )
            
-              alert("OTP not sent try again error occured")
+        alert("OTP not sent try again error occured");
+       
           })
     }
   

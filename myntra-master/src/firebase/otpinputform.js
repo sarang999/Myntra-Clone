@@ -23,7 +23,7 @@ class OtpVerification extends React.Component {
     onSubmitOTP = (e) =>{
     e.preventDefault()
     const code = this.state.otp
-    console.log(code)
+    //console.log(code)
     window.confirmationResult.confirm(code).then((result) => {
       // User signed in successfully.
       const user = result.user;
