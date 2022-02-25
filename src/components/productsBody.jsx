@@ -77,15 +77,22 @@ export const ProductsBody = () => {
     console.log("checked")
     setIsChecked(!isChecked);
     let filteredData = [];
-    if(isChecked === true){
+    if(isChecked === false){
       products.forEach(function(item){
         if(item.categories === 'shirt'){
           console.log("checkedsssss")
           filteredData.push(item);
         }
-        console.log(item)
+        setProducts(filteredData)
       })
      
+    }
+    else if (isChecked === true){
+      axios
+      .get("https://ecommyntra-fake-server-app.herokuapp.com/mens_product_data")
+      .then((res) => {
+        setProducts(res.data);setdataLength(res.data.length);
+      });
     }
   }
 
