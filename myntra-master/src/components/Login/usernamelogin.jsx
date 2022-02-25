@@ -16,9 +16,7 @@ export const UsernameLogin = () => {
                     <input type="text" placeholder="Enter your username" name="username" />
                     <input type="password" placeholder="Enter your password" name="password" />
                 
-                    {/* <Link to="/"> */}
-                    <input className="username-submit" type="submit" value="LOGIN" />
-                    {/* </Link> */}
+                    <Link to="/"><input className="username-submit" type="submit" value="LOGIN" /></Link>
                     
                 </form>
 

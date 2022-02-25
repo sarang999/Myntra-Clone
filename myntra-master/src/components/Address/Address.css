@@ -1,6 +1,6 @@
-body {
+/* body {
     font-family: Whitney, Helvetica, Arial, sans-serif;
-}
+} */
 
 /* -----------------------nav--------------------------- */
 #nav {
@@ -57,14 +57,14 @@ body {
     border-bottom: 1px solid rgb(216, 215, 215);
 }
 
-input {
+/* input {
     width: 90%;
     height: 40px;
     padding-left: 10px;
     margin-bottom: 15px;
     border: 1px solid rgb(216, 215, 215);
     border-radius: 5px;
-}
+} */
 
 .input {
     width: 41%;
@@ -108,14 +108,14 @@ input {
     padding: 10px;
 }
 
-button {
+/* button {
     width: 98%;
     padding: 15px;
     background-color: rgb(252, 36, 108);
     color: white;
     font-weight: bold;
     border: none;
-}
+} */
 
 /* ---------------------------------------------------box2------------------------------------------- */
 #box2 {

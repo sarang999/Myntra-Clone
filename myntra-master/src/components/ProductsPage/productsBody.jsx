@@ -99,7 +99,7 @@ export const ProductsBody = () => {
   return (
     <div>
     {/* -------------------------------------------- Top header ---------------------------------------------- */}
-    <div className={styles.products}>
+    <div className={styles.rproducts}>
      
      <div id = {styles.topProds}>
         {/* ------------------ Top Left Box ---------- */}
@@ -121,15 +121,15 @@ export const ProductsBody = () => {
          <div className = {styles.topMiddle}>
              {/* ----------------- Top Mid Box -------------- */}
              <div className = {styles.topMidBox}>
-                 <div><p className = {styles.pTag}>Bundles  <IoIosArrowDown className = {styles.icons}/> </p></div>
-                 <div><p className = {styles.pTag}>Country of Orgin <IoIosArrowDown className = {styles.icons}/></p></div>
-                 <div><p className = {styles.pTag}>Size <IoIosArrowDown className = {styles.icons}/></p></div>
+                 <div><p className = {styles.rpTag}>Bundles  <IoIosArrowDown className = {styles.ricons}/> </p></div>
+                 <div><p className = {styles.rpTag}>Country of Orgin <IoIosArrowDown className = {styles.ricons}/></p></div>
+                 <div><p className = {styles.rpTag}>Size <IoIosArrowDown className = {styles.ricons}/></p></div>
              </div>
          </div>
                {/* ----------------- Top Mid Box End -------------- */}
          <div className = {styles.topRight}>
              {/* ----------------- Top Right Box -------------- */}
-             <div id = {styles.selectBox}>
+             <div id = {styles.rselectBox}>
                  <p className = {styles.sortTag}>Sort By :</p>
                  <select id = {styles.selectOpt} onChange={handleChange}>
                      <option value = "recomend">Recommended</option>
@@ -151,55 +151,55 @@ export const ProductsBody = () => {
       <div id={styles.leftPart}>
         {/* ------------------------------------ Categories ------------------------ */}
         <h5>CATEGORIES</h5>
-        <input type="checkbox" checked={isChecked} onChange={handleOnChange}></input>
-        <label>T-shirts</label>
+        <input id = {styles.rinput} type="checkbox" checked={isChecked} onChange={handleOnChange}></input>
+        <label className = {styles.rlabel}>T-shirts</label>
         <br />
-        <input type="checkbox"></input>
-        <label>Lounge Tshirts</label>
+        <input id = {styles.rinput} type="checkbox"></input>
+        <label className = {styles.rlabel}>Lounge Tshirts</label>
         <hr  style = {{borderTop:"none", borderBottom:"1px solid black", marginLeft:"-12%"}}/>
 
         {/* ------------------------------------ Brands ------------------------ */}
         <h5>BRAND</h5>
-        <input type="checkbox"></input>
-        <label>Roadster</label>
+        <input id = {styles.rinput} type="checkbox"></input>
+        <label className = {styles.rlabel}>Roadster</label>
         <br />
-        <input type="checkbox"></input>
-        <label>Puma</label>
+        <input id = {styles.rinput} type="checkbox"></input>
+        <label className = {styles.rlabel}>Puma</label>
         <br />
-        <input type="checkbox"></input>
-        <label>WROGN</label>
+        <input id = {styles.rinput} type="checkbox"></input>
+        <label className = {styles.rlabel}>WROGN</label>
         <br />
-        <input type="checkbox"></input>
-        <label>HRX by Hrithik Roshan</label>
+        <input id = {styles.rinput} type="checkbox"></input>
+        <label className = {styles.rlabel}>HRX by Hrithik Roshan</label>
         <br />
-        <input type="checkbox"></input>
-        <label>QUANCIOUS</label>
+        <input id = {styles.rinput} type="checkbox"></input>
+        <label className = {styles.rlabel}>QUANCIOUS</label>
         <br />
-        <input type="checkbox"></input>
-        <label>U.S. Polo Assn</label>
+        <input id = {styles.rinput} type="checkbox"></input>
+        <label className = {styles.rlabel}>U.S. Polo Assn</label>
         <br />
-        <input type="checkbox"></input>
-        <label>Friskers</label>
+        <input id = {styles.rinput} type="checkbox"></input>
+        <label className = {styles.rlabel}>Friskers</label>
         <br />
-        <input type="checkbox"></input>
-        <label>Duke</label>
+        <input id = {styles.rinput} type="checkbox"></input>
+        <label className = {styles.rlabel}>Duke</label>
 
         <hr  style = {{borderTop:"none", borderBottom:"1px solid black", marginLeft:"-12%"}} />
 
         {/* ------------------------------------ Price ------------------------ */}
 
         <h5>Price</h5>
-        <input type="checkbox"></input>
-        <label>Rs. 174 to Rs. 1631</label>
+        <input id = {styles.rinput} type="checkbox"></input>
+        <label className = {styles.rlabel}>Rs. 174 to Rs. 1631</label>
         <br />
-        <input type="checkbox"></input>
-        <label>Rs. 1631 to Rs. 3088</label>
+        <input id = {styles.rinput} type="checkbox"></input>
+        <label className = {styles.rlabel}>Rs. 1631 to Rs. 3088</label>
         <br />
-        <input type="checkbox"></input>
-        <label>Rs. 3088 to Rs. 4545 </label>
+        <input id = {styles.rinput} type="checkbox"></input>
+        <label className = {styles.rlabel}>Rs. 3088 to Rs. 4545 </label>
         <br />
-        <input type="checkbox"></input>
-        <label>Rs. 4545 to Rs. 6002</label>
+        <input id = {styles.rinput} type="checkbox"></input>
+        <label className = {styles.rlabel}>Rs. 4545 to Rs. 6002</label>
         <br />
 
         <hr  style = {{borderTop:"none", borderBottom:"1px solid black",  marginLeft:"-12%"}}  />
@@ -207,33 +207,33 @@ export const ProductsBody = () => {
         {/* ------------------------------------ Color ------------------------ */}
 
         <h5>Color</h5>
-        <input type="checkbox"></input>
+        <input id = {styles.rinput} style = {{verticalAlign: "top"}} type="checkbox"></input>
         <span className={styles.dot} style={{ backgroundColor: "black" }}></span>
-        <label>Black</label>
+        <label className = {styles.rlabel}>Black</label>
         <br />
-        <input type="checkbox"></input>
+        <input id = {styles.rinput} type="checkbox"></input>
         <span className={styles.dot} style={{ backgroundColor: "white" }}></span>
-        <label>White</label>
+        <label className = {styles.rlabel}>White</label>
         <br />
-        <input type="checkbox"></input>
+        <input id = {styles.rinput} type="checkbox"></input>
         <span className={styles.dot} style={{ backgroundColor: "blue" }}></span>
-        <label>Blue </label>
+        <label className = {styles.rlabel}>Blue </label>
         <br />
-        <input type="checkbox"></input>
+        <input id = {styles.rinput} type="checkbox"></input>
         <span className={styles.dot} style={{ backgroundColor: "navy" }}></span>
-        <label>Navy Blue</label>
+        <label className = {styles.rlabel}>Navy Blue</label>
         <br />
-        <input type="checkbox"></input>
+        <input id = {styles.rinput} type="checkbox"></input>
         <span className={styles.dot} style={{ backgroundColor: "red" }}></span>
-        <label>Red</label>
+        <label className = {styles.rlabel}>Red</label>
         <br />
-        <input type="checkbox"></input>
+        <input id = {styles.rinput} type="checkbox"></input>
         <span className={styles.dot} style={{ backgroundColor: "grey" }}></span>
-        <label>Grey</label>
+        <label className = {styles.rlabel}>Grey</label>
         <br />
-        <input type="checkbox"></input>
+        <input id = {styles.rinput} type="checkbox"></input>
         <span className={styles.dot} style={{ backgroundColor: "green" }}></span>
-        <label>Green</label>
+        <label className = {styles.rlabel}>Green</label>
         <br />
 
         <hr  style = {{borderTop:"none", borderBottom:"1px solid black",  marginLeft:"-12%"}}/>
@@ -241,29 +241,29 @@ export const ProductsBody = () => {
         {/* ------------------------------------ Disscount ------------------------ */}
 
         <h5>Disscount</h5>
-        <input type="radio"></input>
-        <label>10% and above</label>
+        <input id = {styles.rinput} type="radio"></input>
+        <label className = {styles.rlabel}>10% and above</label>
         <br />
-        <input type="radio"></input>
-        <label>20% and above</label>
+        <input id = {styles.rinput} type="radio"></input>
+        <label className = {styles.rlabel}>20% and above</label>
         <br />
-        <input type="radio"></input>
-        <label>30% and above</label>
+        <input id = {styles.rinput} type="radio"></input>
+        <label className = {styles.rlabel}>30% and above</label>
         <br />
-        <input type="radio" ></input>
-        <label>40% and above</label>
+        <input id = {styles.rinput} type="radio" ></input>
+        <label className = {styles.rlabel}>40% and above</label>
         <br />
-        <input type="radio"></input>
-        <label>50% and above</label>
+        <input id = {styles.rinput} type="radio"></input>
+        <label className = {styles.rlabel}>50% and above</label>
         <br />
-        <input type="radio"></input>
-        <label>60% and above</label>
+        <input id = {styles.rinput} type="radio"></input>
+        <label className = {styles.rlabel}>60% and above</label>
         <br />
-        <input type="radio"></input>
-        <label>70% and above</label>
+        <input id = {styles.rinput} type="radio"></input>
+        <label className = {styles.rlabel}>70% and above</label>
         <br />
-        <input type="radio"></input>
-        <label>80% and above</label>
+        <input id = {styles.rinput} type="radio"></input>
+        <label className = {styles.rlabel}>80% and above</label>
         <br />
       </div>
 
