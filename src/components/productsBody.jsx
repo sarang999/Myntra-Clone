@@ -10,7 +10,9 @@ export const ProductsBody = () => {
   let [products, setProducts] = useState([]);
   const[dataLength, setdataLength] = useState([]);
   const[sorting, setsorting] = useState([]);
-  let data
+  const [isChecked, setIsChecked] = useState(false);
+
+
   useEffect(() => {
     getData();
   }, []);
@@ -41,7 +43,51 @@ export const ProductsBody = () => {
  
       }));
     }
-}
+    else if (selected === "rating") {
+      setProducts(products.sort(function (a, b) {
+        setsorting(c++);
+        return a.rating - b.rating;
+ 
+      }));
+    }
+    else if (selected === "topDisc") {
+      setProducts(products.sort(function (a, b) {
+        setsorting(c++);
+        return b.discount - a.discount;
+ 
+      }));
+    }
+    else if (selected === "popular") {
+      setProducts(products.sort(function (a, b) {
+        setsorting(c++);
+        return b.count - a.count;
+ 
+      }));
+    }
+    else if (selected === "recomend") {
+      setProducts(products.sort(function (a, b) {
+        setsorting(c++);
+        return a.count - a.price;
+ 
+      }));
+    }
+  };
+  console.log(isChecked)
+  function handleOnChange(){
+    console.log("checked")
+    setIsChecked(!isChecked);
+    let filteredData = [];
+    if(isChecked === true){
+      products.forEach(function(item){
+        if(item.categories === 'shirt'){
+          console.log("checkedsssss")
+          filteredData.push(item);
+        }
+        console.log(item)
+      })
+     
+    }
+  }
 
   return (
     <div>
@@ -79,8 +125,8 @@ export const ProductsBody = () => {
              <div id = {styles.selectBox}>
                  <p className = {styles.sortTag}>Sort By :</p>
                  <select id = {styles.selectOpt} onChange={handleChange}>
-                     <option>Recommended</option>
-                     <option value= "new">What's New</option>
+                     <option value = "recomend">Recommended</option>
+                     {/* <option value= "new">What's New</option> */}
                      <option value = "popular">Popularity</option>
                      <option value =  "topDisc">Better Discount</option>
                      <option  value = "high">Price: High to Low</option>
@@ -98,7 +144,7 @@ export const ProductsBody = () => {
       <div id={styles.leftPart}>
         {/* ------------------------------------ Categories ------------------------ */}
         <h5>CATEGORIES</h5>
-        <input type="checkbox"></input>
+        <input type="checkbox" checked={isChecked} onChange={handleOnChange}></input>
         <label>T-shirts</label>
         <br />
         <input type="checkbox"></input>
