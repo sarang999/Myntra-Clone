@@ -1,6 +1,7 @@
 import React from 'react'
 import { Route, Routes } from "react-router";
 import { Products } from "../components/ProductsPage/products.jsx";
+import { WomensProducts } from "../components/ProductsPage/WomenProducts.jsx";
 import { Header } from '../components/header/Header.jsx';
 import { Home } from '../components/home/Home.jsx';
 import { Footer } from '../components/footer/Footer.jsx';
@@ -26,6 +27,8 @@ export const MyRoutes = () => {
                 <Route exact path="/signupform" element={<Signup />}></Route>
                 <Route exact path="/loginwithusername" element={<UsernameLogin />}></Route>
                 <Route path="/products" element={<Products />}></Route>
+                <Route path="/womensPage" element={<WomensProducts />}></Route>
+
 
                 <Route path="/cart" element={<Bag />}></Route>
                 <Route path="/address" element={<Address />}></Route>
