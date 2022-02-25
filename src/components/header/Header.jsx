@@ -2,7 +2,7 @@ import { AppBar, Toolbar, makeStyles, Box, Typography} from "@material-ui/core";
 import { SearchBar } from "./SearchBar";
 import { Iconbuttons } from "./Iconbuttons";
 // import {Link} from "react-router-dom"
-import {Men} from "./Men"
+import {Inlinenav} from "./Inlinenav"
 
 
 
@@ -11,7 +11,7 @@ const useStyle = makeStyles(
     {
         header: {
            background: "white",
-           height: 80,
+           height: 77,
            boxShadow: " rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px",
            
         },
@@ -27,7 +27,8 @@ const useStyle = makeStyles(
             display: 'flex',
             color: 'black',
             fontSize: 'bold',
-            paddingLeft: '3%'
+            paddingLeft: '2%',
+            marginTop: "1%"
         },
 
         subHeading: {
@@ -53,12 +54,7 @@ export  const Header = () =>
                  </Box>
                  {/* </Link> */}
                  <Box component="span" className={classes.container}>
-                        <Typography className = {classes.subHeading}>Men</Typography>
-                        <Typography className = {classes.subHeading}>Woman</Typography>
-                        <Typography className = {classes.subHeading}>Kids</Typography>
-                        <Typography className = {classes.subHeading}>Home&Living</Typography>
-                        <Typography className = {classes.subHeading}>Beauty</Typography>
-                        <Typography className = {classes.subHeading}>Studio <Box component="span" style={{color:'red', verticalAlign: 'text-bottom', fontSize: '15px'}}>New</Box></Typography>
+                        <Inlinenav/>
                         
                         
                  </Box>

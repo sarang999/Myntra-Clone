@@ -9,6 +9,7 @@ import {Header} from "./components/header/Header"
 // import {Footer} from "./components/footer/Footer"
 import { Productdeatils } from "./components/productDetails/Productdetails";
 
+
 function App() {
   return (
     // <Router>
@@ -21,8 +22,8 @@ function App() {
     //  <Footer/>
     // </Router>
     <div>
-    <Header/>
-    <Productdeatils/>
+     <Header/>
+   
     </div>
     
   );

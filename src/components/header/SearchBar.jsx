@@ -7,7 +7,7 @@ const useStyle = makeStyles(({
         borderRadius: 2,
         marginLeft: '6%',
         marginTop: 10,
-        width: '38%',
+        width: '30%',
         backgroundColor: '#fff',
         display: 'flex',
         
