@@ -110,7 +110,7 @@ export const Payment = () => {
                 <div id="box2">
                     <div id="box1-2-3">
                         <h5 id="totalitems">PRICE DETAILS(0 item)</h5>
-                        <table>
+                        <table id='Table1'>
                             <tr>
                                 <td>Total MRP</td>
                                 <td id="totalMRP">₹</td>

@@ -1,9 +1,9 @@
-import { LOGIN_FAILED, LOGIN_REQ, LOGIN_SUCCESS, LOGOUT_REQ } from "./ActionType";
+import { LOGIN_FAIL, LOGIN_REQUEST, LOGIN_SUCCESS, LOGOUT_REQUEST } from "./ActionType";
 
 
-export const loginReq=()=>{
+export const loginRequest=()=>{
     return{
-        type:LOGIN_REQ
+        type:LOGIN_REQUEST
     }
 }
 export const loginSuccess=(payload)=>{
@@ -15,21 +15,22 @@ export const loginSuccess=(payload)=>{
 
 export const loginFail=()=>{
     return{
-        type:LOGIN_FAILED
+        type:LOGIN_FAIL
     }
 }
 
 export const loginProcess=(userdetails,mobile)=>(dispatch)=>{
-    console.log("login");
-    dispatch(loginReq());
-    let payload= userdetails.filter(item=>item.mobilenumber === mobile)
+    console.log("login")
+    dispatch(loginRequest())
+    let payload= userdetails.filter(item=>item.mobilenumber == mobile)
     payload=payload[0]
     if(payload === undefined){
-        alert("User not found");
-        dispatch(loginFail());
+        alert("User not found")
+        dispatch(loginFail())
     }
     else{
        
+        
         alert(`Welcome Back ${payload.username} `)
         dispatch(loginSuccess(payload))
     }
@@ -37,6 +38,6 @@ export const loginProcess=(userdetails,mobile)=>(dispatch)=>{
 
 export const logoutReq=()=>{
     return{
-        type:LOGOUT_REQ
+        type:LOGOUT_REQUEST
     }
 }

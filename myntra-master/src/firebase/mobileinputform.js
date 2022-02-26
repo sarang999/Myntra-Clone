@@ -1,12 +1,19 @@
 import React from 'react'
 import firebase from './firebase'
+
 import "../components/Login/login.css";
-import "../components/Login/login.css";
-// import { Navigation } from "./navigation";
+import { Navigation } from "./navigation";
 import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
 
-
+const MySubComponent = (props) => {
+  const navigate = useNavigate();
+  if (props.display) {
+    navigate('/otpverification');
+    return <></>;
+  }
+}
 
 class MobilenumberForm extends React.Component {
   
@@ -17,10 +24,10 @@ class MobilenumberForm extends React.Component {
         })
   }
   
-  navigateOtp = () => {
-    const navigate = useNavigate();
-    navigate('/otpverification');
-  }
+  // navigateOtp = () => {
+  //   const navigate = useNavigate();
+  //   navigate('/otpverification');
+  // }
     configureCaptcha = () =>{
       window.recaptchaVerifier = new firebase.auth.RecaptchaVerifier('sign-in-button', {
         'size': 'invisible',
@@ -36,7 +43,14 @@ class MobilenumberForm extends React.Component {
   onSignInSubmit = (e) => {
     e.preventDefault()
     this.configureCaptcha()
-    const phoneNumber = "+91" + this.state.mobile
+    const phoneNumber = "+91" + this.state.mobile;
+    // axios.post("https://ecommyntra-fake-server-app.herokuapp.com/users", {
+    //   mobile: this.state.mobile,
+    // })
+    // .then((res) => {
+    //   console.log("working");
+    // });
+
     console.log(phoneNumber)
     const appVerifier = window.recaptchaVerifier;
     firebase.auth().signInWithPhoneNumber(phoneNumber, appVerifier)
@@ -47,9 +61,12 @@ class MobilenumberForm extends React.Component {
         // console.log("OTP has been sent")
         
         // ...
-        
+      
         alert("OTP sent Click on go to otp Page");
-        this.navigateOtp();
+        // Navigation();
+        // this.navigateOtp();
+        // <MySubComponent />
+        
       })
         // <Link to="/otpverification" />
       .catch((error) => {
@@ -65,6 +82,8 @@ class MobilenumberForm extends React.Component {
     }
   
   render() {
+
+
     return (
       
       <div>
@@ -77,14 +96,34 @@ class MobilenumberForm extends React.Component {
                 <input className='numberform-input' type="number" name="mobile" placeholder="Mobile number"
                     defaultValue=""
             required onChange={this.handleChange} />
-        
+            
             <button className='numberform-button' type="submit">Submit</button>
            
         </form>
+        {/* <MySubComponent display={true} /> */}
         <Link to="/otpverification"><button className="mobile-otp-button">Go to otp page</button></Link>
         </div>
         
     )
   }
 }
+
+
 export default MobilenumberForm;
+
+
+
+
+// const MySubComponent = (props) => {
+//   if (props.display) {
+//       return <p>This text is displayed</p>
+//   }
+// }
+
+// class MyComponent extends React.Component {
+//   render() {
+//       return (
+//           <MySubComponent display={true} />
+//       )
+//   }
+// }
