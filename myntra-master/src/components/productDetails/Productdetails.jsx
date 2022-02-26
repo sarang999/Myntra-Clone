@@ -12,8 +12,8 @@ import React from 'react'
 import { useDispatch } from 'react-redux';
 import { postWishData } from '../../redux/Wishlist/action'
 import { postBagData } from '../../redux/Bag/action'
-
-
+import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 
 
@@ -140,7 +140,8 @@ export const Productdeatils = () => {
     const [data, setData]=React.useState({});
     const [loading, setLoading]=React.useState(true);
     const dispatch = useDispatch();
-    console.log(id);
+    //console.log(id);
+    const userAuth = useSelector((state) => state.loginred.userAuth);
     const classes = useStyle();
 
 
@@ -148,13 +149,14 @@ export const Productdeatils = () => {
         axios.get(`https://ecommyntra-fake-server-app.herokuapp.com/mens_product_data/${id}`)
         .then((res)=>{
            setData(res.data)
-           setLoading(false)
+            setLoading(false);
        })
     }
 
-    React.useEffect(()=>{
-        getData(id)
-    },[])
+    React.useEffect(() => {
+        getData(id);
+    }, []);
+  
   
    
 
@@ -219,8 +221,10 @@ export const Productdeatils = () => {
                              </div>
 
                              <button className={classes.big1}  onClick={()=>{dispatch(postBagData(data));alert("Product is succesfully added to Bag")}} ><ShoppingBagIcon className={classes.bag}/>ADD TO BAG</button>
-                             
-                             <button className={classes.big2}  onClick={()=>{dispatch(postWishData(data));alert("Product is succesfully added to Wishlist")}}><FavoriteBorderOutlinedIcon style={{verticalAlign: 'text-bottom'}}/>WISHLIST</button>
+                        {userAuth ? (<button className={classes.big2} onClick={() => { dispatch(postWishData(data)); alert("Product is succesfully added to Wishlist") }}><FavoriteBorderOutlinedIcon style={{ verticalAlign: 'text-bottom' }} />WISHLIST</button>) : (
+                             <button className={classes.big2}  onClick={()=>{alert("Please Login to add this product to Wishlist")}}><FavoriteBorderOutlinedIcon style={{verticalAlign: 'text-bottom'}}/>WISHLIST</button>
+                             )}
+                            
                              <h3>DELIVERY OPTIONS<span><LocalShippingOutlinedIcon style={{verticalAlign: 'text-bottom'}}/></span></h3>
                              <input placeholder="Enter A PIN code" className={classes.pin}/>
                              <h6>Please enter PIN code to check delivery time & Pay on Delivery Availability</h6>
@@ -307,3 +311,9 @@ export const Productdeatils = () => {
        
     )
 }
+
+
+
+   
+
+

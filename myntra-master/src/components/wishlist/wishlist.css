@@ -6,6 +6,7 @@
 .wrongbackground{
     /* background-color: silver; */
     color: black;
+    margin-left: 3px;
 }
 .navMargin {
     margin-top: 95px;
@@ -169,6 +170,7 @@
 
 .gray {
     color: rgb(155, 152, 152);
+    width: 260px;
 }
 
 .sizeDiv {
@@ -180,16 +182,19 @@
     font-weight: 600;
     border-radius: 50%;
     color: grey;
+    background-color: #f5597d;
 }
 
 .sizeDiv div {
     background: none;
     margin-top: 6px;
+    margin-left: 6px;
+    color: #FFFFFF;
 }
 
 .sizeDiv:hover {
-    border: 1px solid #FF3E6C;
-    color: #FF3E6C;
+    border: 1px solid #f1eeef;
+    color: #15dd58;
 }
 
 .sizeSelectedDiv {
@@ -353,4 +358,8 @@
     font-weight: bold;
     text-align: left;
     margin-bottom: 10px;
+}
+.wish-flexsee{
+    display: flex;
+    justify-content: space-around;
 }

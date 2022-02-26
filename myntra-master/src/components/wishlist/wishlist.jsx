@@ -206,7 +206,7 @@ export const Wishlist = () => {
                         <div className={`${"titleFont"} ${"font16"} ${"gray"}`}>
                           {e.title}
                         </div>
-                        <div>
+                        <div className="wish-flexsee">
                           <span className={`${"titleFont"} ${"font16"}`}>
                             {" "}
                             ₹{e.price}{" "}

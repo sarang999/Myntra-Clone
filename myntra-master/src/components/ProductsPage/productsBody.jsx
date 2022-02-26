@@ -5,15 +5,39 @@ import { FaRegHeart } from 'react-icons/fa';
 // import styles from "./productsTop.module.css";
 import { IoIosArrowDown } from 'react-icons/io';
 import { Link } from "react-router-dom";
-
+import { postWishData } from '../../redux/Wishlist/action';
+import{  useParams } from "react-router-dom";
+import React from 'react';
+import { useDispatch } from 'react-redux';
 
 export const ProductsBody = () => {
   let [products, setProducts] = useState([]);
-  const[dataLength, setdataLength] = useState([]);
-  const[sorting, setsorting] = useState([]);
+  const [dataLength, setdataLength] = useState([]);
+  const [sorting, setsorting] = useState([]);
   const [isChecked, setIsChecked] = useState(false);
 
 
+   
+  //------------------wishlist adding starting------------------------
+  
+  // const [datawish, setData1] = React.useState({});
+  
+  // const dispatch = useDispatch();
+  // const getDataWishlist = (id) => {
+  //   axios.get(`https://ecommyntra-fake-server-app.herokuapp.com/mens_product_data/${id}`)
+  //     .then((res) => {
+  //       setData1(res.data);
+     
+  //     })
+  // }
+
+  // React.useEffect(() => {
+  //   getDataWishlist(id);
+  // }, []);
+  
+  // onClick={()=>{dispatch(postWishData(data));alert("Product is succesfully added to Wishlist")}
+  
+ //------------------wishlist adding ended ------------------------
   useEffect(() => {
     getData();
   }, []);
@@ -23,8 +47,7 @@ export const ProductsBody = () => {
       .then((res) => {
         setProducts(res.data);setdataLength(res.data.length);
       });
-      
-      
+     
    
   }
   console.log(products);
@@ -81,7 +104,7 @@ export const ProductsBody = () => {
     if(isChecked === false){
       products.forEach(function(item){
         if(item.categories === 'shirt'){
-          console.log("checkedsssss")
+         // console.log("checkedsssss")
           filteredData.push(item);
         }
         setProducts(filteredData)
@@ -97,7 +120,7 @@ export const ProductsBody = () => {
     }
   }
 
-  return (
+  return(
     <div>
     {/* -------------------------------------------- Top header ---------------------------------------------- */}
     <div className={styles.rproducts}>
@@ -279,8 +302,14 @@ export const ProductsBody = () => {
                 <Link to = {`/productsdetails/${item.id}`}><img className={styles.img1} src = {item.images.image1}></img></Link>
               
                 <div className={styles.prodDetails}>
-                <button style = {{ marginLeft: "-12px", width:"105%"}} className={styles.wishButton}><FaRegHeart className = {styles.iconHeart}/> WISHLIST </button>
-                <div className={styles.prodBrand}>{item.brand}</div>
+                  <Link to={`/productsdetails/${item.id}`}>
+                  <button style={{ marginLeft: "-12px", width: "105%" }} className={styles.wishButton}
+                   
+                   ><FaRegHeart className={styles.iconHeart} /> SEE PRODUCT DETAILS </button>
+                  </Link>
+                 
+                  <div className={styles.prodBrand}>{item.brand}</div>
+                  {/* getWishDataWish */}
                 {/* <div>{item.description}</div> */}
                 <div className={styles.prodTitle}>{item.title}</div>
                 <div className={styles.prodSize}>{item.size}</div>

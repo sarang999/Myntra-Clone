@@ -2,18 +2,18 @@ import React from 'react'
 import firebase from './firebase'
 
 import "../components/Login/login.css";
-import { Navigation } from "./navigation";
+// import { Navigation } from "./navigation";
 import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
+// import axios from 'axios';
 
-const MySubComponent = (props) => {
-  const navigate = useNavigate();
-  if (props.display) {
-    navigate('/otpverification');
-    return <></>;
-  }
-}
+// const MySubComponent = (props) => {
+//   const navigate = useNavigate();
+//   if (props.display) {
+//     navigate('/otpverification');
+//     return <></>;
+//   }
+// }
 
 class MobilenumberForm extends React.Component {
   
@@ -61,7 +61,7 @@ class MobilenumberForm extends React.Component {
         // console.log("OTP has been sent")
         
         // ...
-      
+       
         alert("OTP sent Click on go to otp Page");
         // Navigation();
         // this.navigateOtp();

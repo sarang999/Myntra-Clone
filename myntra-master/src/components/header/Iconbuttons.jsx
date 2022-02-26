@@ -28,7 +28,7 @@ const useStyle = makeStyles(
 export const Iconbuttons = () =>{
     const userAuth = useSelector((state) => state.loginred.userAuth);
     const username = useSelector(state => state.loginred.username);
-    const classes = useStyle()
+    const classes = useStyle();
     const subURL = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png';
     return(
         <>
@@ -53,7 +53,7 @@ export const Iconbuttons = () =>{
                             
                                 <Link to="/login/userdetails">
                                     <button className="login">
-                                       Userdetails 
+                                       See your details 
                                     </button>
                                 </Link>
                             ) : (
@@ -68,9 +68,19 @@ export const Iconbuttons = () =>{
                                 
                             </a>
                             <hr/>
-                            
-                            <a href="#" >Order</a>
-                            <a href="#">Wishlist</a>
+                      
+                        <a href="#" >Order</a>
+                        {userAuth ? (
+                            <Link to="/wishlist">
+                                 Wishlist
+                                </Link>
+                        ) : (
+                                
+                            <Link to="/login">
+                           Wishlist
+                           </Link> 
+                            )}
+                           
                             <a href="#">Gift cards</a>
                             <a href="#">Contact us</a>
                             <a href="#">Myntra insider<sup style={{color: "white", backgroundColor: "red"}}>New</sup></a>
