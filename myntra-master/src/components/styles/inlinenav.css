@@ -79,7 +79,7 @@
     position: absolute;
     display: block;
     width: 100%;
-    top: 50px;
+    top: 60px;
     left: 0;
  
     opacity: 0;
@@ -133,3 +133,10 @@
 }
  
 .nav .nav-column li a:hover { color: #080707; }
+
+
+.bigcontainer{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 50px;
+    width: max-content;
+ 
+}

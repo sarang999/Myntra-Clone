@@ -8,11 +8,11 @@ export const Inlinenav = () =>
     return(
 
         <>
-          <ul class="nav">
+          <ul className="nav">
         <li>
             <a href="#">MEN</a>
-            <div>
-                <div class="nav-column">
+            <div className="bigcontainer">
+                <div className="nav-column">
                     <h3>Topwear</h3>
                     <ul>
                             <li><a href="">Topwear</a></li>
@@ -36,7 +36,7 @@ export const Inlinenav = () =>
                     </ul>
                 </div>
      
-                <div class="nav-column">
+                <div className="nav-column">
                     <h3>Bottom Wear</h3>
                     <ul>
                         <li><a href="#">Jeans</a></li>
@@ -74,7 +74,7 @@ export const Inlinenav = () =>
                     </ul>
                 </div>
      
-                <div class="nav-column">
+                <div className="nav-column">
                     <h3>Sports & Active Wear</h3>
                     <ul>
                         <li><a href="#">Sports Shoes</a></li>
@@ -97,8 +97,8 @@ export const Inlinenav = () =>
                     </ul>
                 </div>
      
-                <div class="nav-column">
-                    <h3 class="orange">Fashion Accessories</h3>
+                <div className="nav-column">
+                    <h3 className="orange">Fashion Accessories</h3>
                     <ul>
                         <li><a href="#">Wallets</a></li>
                         <li><a href="#">Belts</a></li>
@@ -114,7 +114,7 @@ export const Inlinenav = () =>
                         <h3>Luggages & Trolleys</h3>
                     </ul>
      
-                    <h3 class="orange">Brands</h3>
+                    <h3 className="orange">Brands</h3>
                     <ul>
                         <li><a href="#">Driving shoes</a></li>
                         <li><a href="#">Espadrilles</a></li>
@@ -123,8 +123,8 @@ export const Inlinenav = () =>
             </div>
         </li>
         <li><a href="#">WOMAN</a>
-        <div>
-                <div class="nav-column">
+           <div className="bigcontainer">
+                <div className="nav-column">
                     <h3>Indian & Fusion Wear</h3>
                     <ul>
                             <li><a href="">Kurtas & Suits</a></li>
@@ -144,7 +144,7 @@ export const Inlinenav = () =>
                     </ul>
                 </div>
      
-                <div class="nav-column">
+                <div className="nav-column">
                     <h3>Western Wear</h3>
                     <ul>
                         <li><a href="#">Dresses</a></li>
@@ -179,7 +179,7 @@ export const Inlinenav = () =>
                     </ul>
                 </div>
      
-                <div class="nav-column">
+                <div className="nav-column">
                     <h3>Lingerie & Sleepwear</h3>
                     <ul>
                         <li><a href="#">Bra</a></li>
@@ -201,8 +201,8 @@ export const Inlinenav = () =>
                     </ul>
                 </div>
      
-                <div class="nav-column">
-                    <h3 class="orange">Gadgets</h3>
+                <div className="nav-column">
+                    <h3 className="orange">Gadgets</h3>
                     <ul>
                         <li><a href="#">Smart Wearables</a></li>
                         <li><a href="#">Fitness Gadgets</a></li>
@@ -216,7 +216,7 @@ export const Inlinenav = () =>
                         <li><a href="#">Earrings</a></li>
                     </ul>
      
-                    <h3 class="orange">Backpacks</h3>
+                    <h3 className="orange">Backpacks</h3>
                     <hr/>
                     <ul>
                         <li><a href="#">Driving shoes</a></li>
@@ -228,9 +228,9 @@ export const Inlinenav = () =>
         
         <li>
             <a href="#">KIDS</a>
-            <div>
-                <div class="nav-column">
-                    <h3 class="orange">Boys Clothing</h3>
+            <div className="bigcontainer">
+                <div className="nav-column">
+                    <h3 className="orange">Boys Clothing</h3>
                     <ul>
                         <li><a>T-Shirts</a></li>
                         <li><a>Shirts</a></li>
@@ -247,7 +247,7 @@ export const Inlinenav = () =>
                         <li><a>Value Packs</a></li> */}
                     </ul>
      
-                    <h3 class="orange">Girls Clothing</h3>
+                    <h3 className="orange">Girls Clothing</h3>
                     <ul>
                             <li><a>Dresses</a></li>
                             <li><a>Tops</a></li>
@@ -267,7 +267,7 @@ export const Inlinenav = () =>
                     </ul>
                 </div>
      
-                <div class="nav-column">
+                <div className="nav-column">
                     <h3>Footwear</h3>
                     <ul>
                         <li><a>Casual Shoes</a></li>
@@ -288,7 +288,7 @@ export const Inlinenav = () =>
                     </ul>
                 </div>
      
-                <div class="nav-column">
+                <div className="nav-column">
                      <h3>Infants</h3>
                     <ul>
                         
@@ -307,7 +307,7 @@ export const Inlinenav = () =>
                     
                 </div>
      
-                <div class="nav-column">
+                <div className="nav-column">
                     <h3>Kids Accessories</h3>
                     <ul>
                         <li><a>Bags & Backpacks</a></li>
@@ -336,9 +336,9 @@ export const Inlinenav = () =>
         
         <li><a href="#">HOME&LIVING</a>
 
-        <div>
-                <div class="nav-column">
-                    <h3 class="orange">Bed Linen & Furnishing</h3>
+             <div className="bigcontainer">
+                <div className="nav-column">
+                    <h3 className="orange">Bed Linen & Furnishing</h3>
                     <ul>
                             <li><a>Bedsheets</a></li>
                             <li><a>Bedding Sets</a></li>
@@ -352,7 +352,7 @@ export const Inlinenav = () =>
                             <h3>Door Mats</h3>
                     </ul>
      
-                    <h3 class="orange">Bath</h3>
+                    <h3 className="orange">Bath</h3>
                     <ul>
                             <li><a>Bath Towels</a></li>
                             <li><a>Hand & Face Towels</a></li>
@@ -372,7 +372,7 @@ export const Inlinenav = () =>
                     </ul>
                 </div>
      
-                <div class="nav-column">
+                <div className="nav-column">
                     <h3>Home Décorr</h3>
                     <ul>
                             <li><a>Plants & Planters</a></li>
@@ -390,7 +390,7 @@ export const Inlinenav = () =>
                     </ul>
                 </div>
      
-                <div class="nav-column">
+                <div className="nav-column">
                      <h3>Kitchen & Table</h3>
                     <ul>
                             <li><a>Dinnerware & Serveware</a></li>
@@ -409,7 +409,7 @@ export const Inlinenav = () =>
                     
                 </div>
      
-                <div class="nav-column">
+                <div className="nav-column">
                     <h3>Brands</h3>
                     <ul>
                     
@@ -437,21 +437,18 @@ export const Inlinenav = () =>
         </li>
 
         <li><a href="#">BEAUTY</a>
-            <div>
-                <div class="nav-column">
-                    <h3 class="orange">Makeup</h3>
+            <div className="bigcontainer">
+                <div className="nav-column">
+                    <h3 className="orange">Makeup</h3>
                     <ul>
-                            <li><a>Makeup</a></li>
+                            
                             <li><a>Lipstick</a></li>
                             <li><a>Lip Gloss</a></li>
                             <li><a>Lip Liner</a></li>
                             <li><a>Mascara</a></li>
                             <li><a>Eyeliner</a></li>
                             <li><a>Kajal</a></li>
-                            <li><a>Eyeshadow</a></li>
-                            <li><a>Foundation</a></li>
-                            <li><a>Primer</a></li>
-                            <li><a>Concealer</a></li>
+                            <li><a>Eyeshadow</a></li>                            
                             <li><a>Compact</a></li>
                             <li><a>Nail Polish</a></li>
                     </ul>
@@ -464,19 +461,13 @@ export const Inlinenav = () =>
                             <li><a>Sunscreen</a></li>
                             <li><a>Serum</a></li>
                             <li><a>Face Wash</a></li>
-                            <li><a>Eye Cream</a></li>
-                            <li><a>Lip Balm</a></li>
-                            <li><a>Body Lotion</a></li>
-                            <li><a>Body Wash</a></li>
                             <li><a>Body Scrub</a></li>
                             <li><a>Hand Cream</a></li> 
-                            <hr/>
-                            <h3>Baby Care</h3>
-                            <h3>Masks</h3>    
+                             
                     </ul>
                 </div>
      
-                <div class="nav-column">
+                <div className="nav-column">
                     <h3>Haircare</h3>
                     <ul>
                             <li><a>Shampoo</a></li>
@@ -496,7 +487,7 @@ export const Inlinenav = () =>
                     </ul>
                 </div>
      
-                <div class="nav-column">
+                <div className="nav-column">
                      <h3>Appliances</h3>
                     <ul>
                         
@@ -509,13 +500,17 @@ export const Inlinenav = () =>
                                 <li><a>Trimmers</a></li>
                                 <li><a>Beard Oil</a></li>
                                 <li><a>Hair Wax</a></li>
+                            <hr/>
+                         
+                            <h3>Baby Care</h3>
+                            <h3>Masks</h3>       
                                     
                     </ul>
                   
                     
                 </div>
      
-                <div class="nav-column">
+                <div className="nav-column">
                     <h3>Beauty Gift & Makeup Set</h3>
                     <ul>
                         <li><a>Beauty Gift</a></li>
@@ -530,12 +525,9 @@ export const Inlinenav = () =>
                                 <li><a>Lakme</a></li>
                                 <li><a>Maybelline</a></li>
                                 <li><a>LOreal</a></li>
-                                <li><a>Philips</a></li>
                                 <li><a>Bath & Body Works</a></li>
                                 <li><a>THE BODY SHOP</a></li>
-                                <li><a>Biotique</a></li>
-                                <li><a>Mamaearth</a></li>
-                                <li><a>MCaffeine</a></li>
+                               
                                 <li><a>Nivea</a></li>
                                 <li><a>Lotus Herbals</a></li>
                                 <li><a>LOreal Professionnel</a></li>
@@ -547,11 +539,16 @@ export const Inlinenav = () =>
 
 
         <li><a href="#">STUDIO</a>
-        <div>
-                <div class="nav-column">
-                    {/* <img src=""/> */}
-                   <img src="https://constant.myntassets.com/web/assets/img/sudio-nav-banner.png"/>
-                   <button>EXPLORE STUDIO</button>
+        <div className="bigcontainer">
+                <div className="nav-column-studio">
+                    <div>
+                    <img style={{marginLeft: "40%"}} src="https://constant.myntassets.com/web/assets/img/studio-logo-new.svg"/>
+                    <br/>
+                    <p style={{marginLeft: '18%'}}>Your daily inspiration for everything fashion</p>
+                    
+                   <img style={{width: '400px', height: '200px', marginLeft: "12%"}} src="https://constant.myntassets.com/web/assets/img/sudio-nav-banner.png"/>
+                   <button style={{width: '200px', height: '40px', marginLeft: "25%"}}>EXPLORE STUDIO</button>
+                   </div>
                 </div>
             </div>
         
