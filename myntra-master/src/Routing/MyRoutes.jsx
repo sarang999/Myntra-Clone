@@ -17,6 +17,7 @@ import { Address } from '../components/Address/Address.jsx';
 import { Payment } from '../components/Payment/Payment.jsx';
 import { UserDetails } from "../components/Login/userdetails";
 import { Productdeatils } from "../components/productDetails/Productdetails";
+// import { WomensProducts } from "../components/ProductsPage/WomenProducts";
 
 export const MyRoutes = () => {
     // let { id } = useParams();
@@ -31,7 +32,7 @@ export const MyRoutes = () => {
                 <Route exact path="/signupform" element={<Signup />}></Route>
                 <Route exact path="/entermobilenumber" element={<Entermobile />}></Route>
                 <Route path="/products" element={<Products />}></Route>
-                <Route path="/womensPage" element={<WomensProducts />}></Route>
+                <Route path="/womensproducts" element={<WomensProducts />}></Route>
                 <Route path="/cart" element={<Bag />}></Route>
                 <Route exact path="/login/userdetails" element={<UserDetails />}></Route>
                 <Route exact path="/wishlist" element={<WishlistMainPage/>}></Route>
