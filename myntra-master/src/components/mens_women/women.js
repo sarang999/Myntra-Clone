@@ -11,7 +11,7 @@ export const  Women = () => {
 
     let dataToRender = women;
     return (
-        <div>
+        <div className="menspage-size-zero">
             {
                 dataToRender.banner.map((row, index) => {
                     return <Section imageList={row} key={index} />
