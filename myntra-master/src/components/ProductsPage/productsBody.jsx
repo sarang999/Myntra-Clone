@@ -2,9 +2,9 @@ import styles from "./productsBody.module.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { FaRegHeart } from 'react-icons/fa';
-import { Link } from "react-router-dom";
 // import styles from "./productsTop.module.css";
 import { IoIosArrowDown } from 'react-icons/io';
+import { Link } from "react-router-dom";
 
 
 export const ProductsBody = () => {
@@ -269,16 +269,14 @@ export const ProductsBody = () => {
       </div>
 
       {/* -------------------------------------------------Right Div !important ---------------------------------- */}
-      <Link to="/productdetails"></Link>
+      
       
       <div id={styles.rightPart}>
         <div id={styles.appendData}>
           {products.map((item) => {
-            {/* console.log(item.images.image1) */}
             return (
-              <div id={styles.dataGrid} key={item.i}>
-               <img className={styles.img1} src = {item.images.image1}></img>
-               
+              <div id = {styles.dataGrid} key = {item.i}>
+                <Link to = {`/productsdetails/${item.id}`}><img className={styles.img1} src = {item.images.image1}></img></Link>
               
                 <div className={styles.prodDetails}>
                 <button style = {{ marginLeft: "-12px", width:"105%"}} className={styles.wishButton}><FaRegHeart className = {styles.iconHeart}/> WISHLIST </button>
