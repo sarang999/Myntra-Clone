@@ -5,7 +5,9 @@ import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlin
 import LocalShippingOutlinedIcon from '@mui/icons-material/LocalShippingOutlined';
 import LocalOfferOutlinedIcon from '@mui/icons-material/LocalOfferOutlined';
 import EventNoteOutlinedIcon from '@mui/icons-material/EventNoteOutlined';
-import {Footer} from "../footer/Footer"
+import {Footer} from "../footer/Footer";
+import{  useParams } from "react-router-dom";
+
 
 
 
@@ -121,8 +123,10 @@ const useStyle = makeStyles({
 
 
 export const Productdeatils = () => {
-
-    const classes = useStyle()
+    let { id } = useParams();
+    console.log(id);
+    const classes = useStyle();
+    
     return(
             <Box className={classes.container}>
                 
