@@ -25,13 +25,13 @@ const useStyle = makeStyles({
     },
 
     flexDivleft:{
-        width: '60%',
+        width: '68%',
         marginRight: 20
 
     },
 
     flexDivright:{
-        width: '45%'
+        width: '30%'
     },
     star:{
         transform: 'scale(0.7)',
@@ -126,7 +126,7 @@ export const Productdeatils = () => {
     let { id } = useParams();
     console.log(id);
     const classes = useStyle();
-    
+
     return(
             <Box className={classes.container}>
                 
