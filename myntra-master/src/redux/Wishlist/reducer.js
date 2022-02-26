@@ -22,8 +22,7 @@ export const wishlistReducer = (state=initState, {type, payload}) => {
         case POST_WISH_SUCCESS :
         return {
             ...state,
-            // wishlistData: [...state.wishlistData, payload],
-            // wishlistData: payload,
+        
             isLoading: false,
             isError: false,
             isSuccess: true
@@ -77,7 +76,7 @@ export const wishlistReducer = (state=initState, {type, payload}) => {
         case DELETE_WISH_SUCCESS :
         return {
             ...state,
-            // wishlistData: payload,
+          
             isLoading: false,
             isError: false,
             isSuccess: true
@@ -119,3 +118,6 @@ export const wishlistReducer = (state=initState, {type, payload}) => {
         return state;
     }
 }
+
+
+

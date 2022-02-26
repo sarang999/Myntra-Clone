@@ -8,13 +8,13 @@ import { Footer } from '../components/footer/Footer.jsx';
 import { MobileNumber } from "../components/Login/mobilenumber";
 import { Otp } from "../components/Login/otp";
 import { Verified } from "../components/Login/verified";
-import { Wishlist } from "../components/wishlist/wishlist";
+import { WishlistMainPage } from "../components/wishlist/mainwishlist";
 import { Signup } from "../components/Signup/signup";
 import { Entermobile } from "../components/Login/usernamelogin";
 import { Bag } from '../components/Bag/Bag.jsx';
 import { Address } from '../components/Address/Address.jsx';
 import { Payment } from '../components/Payment/Payment.jsx';
-
+import { UserDetails } from "../components/Login/userdetails";
 export const MyRoutes = () => {
     return (
         <div>
@@ -28,8 +28,8 @@ export const MyRoutes = () => {
                 <Route exact path="/entermobilenumber" element={<Entermobile />}></Route>
                 <Route path="/products" element={<Products />}></Route>
                 <Route path="/womensPage" element={<WomensProducts />}></Route>
-
-
+                <Route exact path="/login/userdetails" element={<UserDetails/>}></Route>
+                <Route exact path="/wishlist" element={<WishlistMainPage/>}></Route>
                 <Route path="/cart" element={<Bag />}></Route>
                 <Route path="/address" element={<Address />}></Route>
                 <Route path="/payment" element={<Payment />}></Route>

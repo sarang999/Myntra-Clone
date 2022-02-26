@@ -52,7 +52,7 @@ export const MobileNumber = () => {
                             />
                             {/* enter from firebase */}
                             <input onChange={(e) => setMobile(e.target.value)}
-                               required value={mobile} className="input2" type="text" placeholder="Mobile Number" />
+                                required value={mobile} className="input2" type="text" placeholder="Mobile Number" />
 
                             <button className="loginbutton" onClick={() => { handleLogin() }}>CONTINUE
                             </button>
@@ -79,7 +79,6 @@ export const MobileNumber = () => {
             </div>
         </div>
           
-    )
-        : (navigate('/userdetails'))
+    ) : (<> {navigate('/login/userdetails')}</> );
 };
 

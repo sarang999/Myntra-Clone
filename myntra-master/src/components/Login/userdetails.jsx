@@ -1,14 +1,14 @@
-import React from 'react'
-import { useSelector,useDispatch} from 'react-redux'
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
 import { useNavigate } from "react-router-dom";
-import {Redirect} from "react-router-dom"
-import styles from"./Login.module.css"
-import imageuser from "../Navbar/navimages/user.png"
-import { logoutReq } from '../../Redux/Login/Action';
+import "./userdetails.css";
+import user_icon from "./LoginImages/user_icon.png";
+// import imageuser from "../Navbar/navimages/user.png"
+import { logoutReq } from '../../redux/Login/Action';
 
-function UserDetails() {
+export const UserDetails = () => {
 
-    let history = useNavigate();
+    let navigate = useNavigate();
     const dispatch = useDispatch();
     const phoneNumber = useSelector(state => state.loginred.phoneNumber);
     const email = useSelector(state => state.loginred.email);
@@ -16,29 +16,27 @@ function UserDetails() {
     const username = useSelector(state => state.loginred.username);
     
     const handleLogout = () => {
-        alert("Do you want to logout?");
+        alert(`${username} do you want to logout?`);
         dispatch(logoutReq());
     };
 
-    return userAuth? (
-        <div>
-        <div className={styles.afterlogin}>
-            <div>
-                <img className={styles.imgfirework} src={imageuser} alt="" />
+    return userAuth ? (
+        <div className='userdetails-main'>
+            <div className={"afterlogin"}>
+                <div>
+                    <img className={"imgfirework"} src={user_icon} alt="" />
+                </div>
+                <div className='userdetails-subdiv'>
+                    <h1>Hi,{username}</h1>
+                    <h5>Email : {email}</h5>
+                    <h5>Contact:+91 {phoneNumber}</h5>
+                </div>
             </div>
-            <div>
-            <h1>Hello,{username}</h1>
-            <h3>Email : {email}</h3>
-            <h3>Phone Number:+91 {phoneNumber}</h3>
-            </div>
+         
+            <h2 className='happy-shop'>Happy Shopping !!</h2>
+            <button className={"loginbutton1"} onClick={() => navigate('/')}>Continue</button><br />
+            <button className={"loginbutton2"} onClick={() => handleLogout()}>Logout</button>
         </div>
-            <p>You are already logged in using above details.</p>
-            <p>Thank you.</p>
-            <h2>Happy Shopping !!</h2>
-            <button className={styles.loginbutton1} onClick={()=>history.go(-1)}>Continue</button><br/>
-            <button className={styles.loginbutton2} onClick={()=>handleLogout()}>Logout</button>
-        </div>
-    ):(<Redirect to="/login"/>)
+    ) : (<>{navigate('/login')}</>);
 };
 
-export default UserDetails

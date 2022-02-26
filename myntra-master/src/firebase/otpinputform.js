@@ -2,6 +2,7 @@ import React from 'react';
 import firebase from './firebase';
 import { Link } from "react-router-dom";
 import "../components/Login/login.css";
+
 class OtpVerification extends React.Component {
   handleChange = (e) =>{
       const { name, value } = e.target;
@@ -44,7 +45,7 @@ class OtpVerification extends React.Component {
           <button className='otpverification-button' type="submit">Submit</button>
         </form>
         <Link to="/otpverified">
-          <button className='verify-otp-check'>COUNTINUE</button>
+          <button className='verify-otp-check'>CONTINUE</button>
           </Link>
       </div>
     )
