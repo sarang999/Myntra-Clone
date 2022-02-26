@@ -10,7 +10,7 @@ import { Otp } from "../components/Login/otp";
 import { Verified } from "../components/Login/verified";
 import { Wishlist } from "../components/wishlist/wishlist";
 import { Signup } from "../components/Signup/signup";
-import { UsernameLogin } from "../components/Login/usernamelogin";
+import { Entermobile } from "../components/Login/usernamelogin";
 import { Bag } from '../components/Bag/Bag.jsx';
 import { Address } from '../components/Address/Address.jsx';
 import { Payment } from '../components/Payment/Payment.jsx';
@@ -25,7 +25,7 @@ export const MyRoutes = () => {
                 <Route exact path='/otpverification' element={<Otp />}></Route>
                 <Route exact path="/otpverified" element={<Verified />}></Route>
                 <Route exact path="/signupform" element={<Signup />}></Route>
-                <Route exact path="/loginwithusername" element={<UsernameLogin />}></Route>
+                <Route exact path="/entermobilenumber" element={<Entermobile />}></Route>
                 <Route path="/products" element={<Products />}></Route>
                 <Route path="/womensPage" element={<WomensProducts />}></Route>
 

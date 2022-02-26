@@ -7,10 +7,10 @@ import "../Login/login.css";
 export const Signup = () => {
     
     const [details, setDetails] = useState({
-        userdetails: "",
+       
+        mobilenumber: "",
+        username: "",
         email: "",
-        mobile: "",
-        number:"",
     });
 
     const handleChange = (e) => {
@@ -20,7 +20,7 @@ export const Signup = () => {
 
     function postUsers(e) {
         e.preventDefault();
-       //https://ecommyntra-fake-server-app.herokuapp.com/users
+        //https://ecommyntra-fake-server-app.herokuapp.com/users
         axios.post("https://ecommyntra-fake-server-app.herokuapp.com/users", details)
             .then(function (res) {
                 // fetchData();
@@ -47,27 +47,28 @@ export const Signup = () => {
             <div className="signup-main">
                 <h3>Complete your Sign Up</h3>
                 <form className="signup-form" onSubmit={(e) => {
-                  
                     alert("Confirm for submitting");
                     postUsers(e);
                 }}>
-                
-                    <input type="text" placeholder="Enter your name" name="userdetails" onChange={handleChange} />
-                    
-                    <input type="email" placeholder="Enter your email" name="email" onChange={handleChange}  />
-                    
-                    <input type="password" placeholder="Create password" name="mobile" onChange={handleChange} />
 
-                    <input type="number" maxLength="10" placeholder="Enter Phone Number" name="number" onChange={handleChange} />
+                    <input type="number" maxLength="10" placeholder="Enter your mobile number"
+                       required name="mobilenumber" onChange={handleChange} />
+                     
+                    <input type="username" placeholder="Enter your username" name="username" required onChange={handleChange}
                     
-                    <input className="signup-submit" type="submit" value="CREATE ACCOUNT"/>
+                    />
+
+                    <input type="email" placeholder="Enter your email"
+                    required  name="email" onChange={handleChange} />
+                    
+                    <input className="signup-submit" type="submit" value="CREATE ACCOUNT" />
                     
                 </form>
-                <Link to="/loginwithusername">
+                <Link to="/login">
                     <button className="send-to-username">Click here to Login</button>
                 </Link>
                 <p>Have trouble in logging in? <span className="conditions">Get help</span></p>
             </div>
         </div>
-    )
-}
+    );
+};
