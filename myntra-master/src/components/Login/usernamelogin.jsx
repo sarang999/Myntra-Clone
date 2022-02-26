@@ -50,9 +50,7 @@ export const UsernameLogin = () => {
                     //;history.go(-1)
                     />
                 
-                    {/* <Link to="/"> */}
-                    <input className="username-submit" type="submit" value="LOGIN" />
-                    {/* </Link> */}
+                    <Link to="/"><input className="username-submit" type="submit" value="LOGIN" /></Link>
                     
                 </form>
 

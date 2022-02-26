@@ -1,4 +1,4 @@
-import styles from "./productsBody.module.css";
+import styles from "./WomensPage.module.css";
 import { useState, useEffect } from "react";
 import axios from "axios";
 import { FaRegHeart } from 'react-icons/fa';
@@ -6,7 +6,7 @@ import { FaRegHeart } from 'react-icons/fa';
 import { IoIosArrowDown } from 'react-icons/io';
 
 
-export const ProductsBody = () => {
+export const WomensProducts = () => {
   let [products, setProducts] = useState([]);
   const[dataLength, setdataLength] = useState([]);
   const[sorting, setsorting] = useState([]);
@@ -18,7 +18,7 @@ export const ProductsBody = () => {
   }, []);
   function getData() {
     axios
-      .get("https://ecommyntra-fake-server-app.herokuapp.com/mens_product_data")
+      .get("https://ecommyntra-fake-server-app.herokuapp.com/womens_product_data")
       .then((res) => {
         setProducts(res.data);setdataLength(res.data.length);
       });
@@ -79,7 +79,7 @@ export const ProductsBody = () => {
     let filteredData = [];
     if(isChecked === false){
       products.forEach(function(item){
-        if(item.categories === 'shirt'){
+        if(item.categories === 'tops'){
           console.log("checkedsssss")
           filteredData.push(item);
         }
@@ -89,7 +89,7 @@ export const ProductsBody = () => {
     }
     else if (isChecked === true){
       axios
-      .get("https://ecommyntra-fake-server-app.herokuapp.com/mens_product_data")
+      .get("https://ecommyntra-fake-server-app.herokuapp.com/womens_product_data")
       .then((res) => {
         setProducts(res.data);setdataLength(res.data.length);
       });
@@ -106,10 +106,10 @@ export const ProductsBody = () => {
          <div className = {styles.topLeft}>
              <div className = {styles.topFlex}>
                  <p>Home / Clothing / </p>
-                 <p style = {{marginLeft:"-14px"}}> Men's Clothing</p>
+                 <p style = {{marginLeft:"-14px"}}> Women's Clothing</p>
              </div>
              <div className = {styles.topFlexMid}>
-                 <p>Men Items - </p>
+                 <p>Women Items - </p>
                  <p style = {{marginLeft:"-14px"}}>{dataLength} items</p>
              </div>
              <div className = {styles.topFlexBot}>
@@ -152,16 +152,16 @@ export const ProductsBody = () => {
         {/* ------------------------------------ Categories ------------------------ */}
         <h5>CATEGORIES</h5>
         <input id = {styles.rinput} type="checkbox" checked={isChecked} onChange={handleOnChange}></input>
-        <label className = {styles.rlabel}>Shirts</label>
+        <label className = {styles.rlabel}>Tops</label>
         <br />
         <input id = {styles.rinput} type="checkbox"></input>
-        <label className = {styles.rlabel}>Lounge Tshirts</label>
+        <label className = {styles.rlabel}>T-Shirts</label>
         <hr  style = {{borderTop:"none", borderBottom:"1px solid black", marginLeft:"-12%"}}/>
 
         {/* ------------------------------------ Brands ------------------------ */}
         <h5>BRAND</h5>
         <input id = {styles.rinput} type="checkbox"></input>
-        <label className = {styles.rlabel}>Roadster</label>
+        <label className = {styles.rlabel}>Clovia</label>
         <br />
         <input id = {styles.rinput} type="checkbox"></input>
         <label className = {styles.rlabel}>Puma</label>
@@ -170,19 +170,19 @@ export const ProductsBody = () => {
         <label className = {styles.rlabel}>WROGN</label>
         <br />
         <input id = {styles.rinput} type="checkbox"></input>
-        <label className = {styles.rlabel}>HRX by Hrithik Roshan</label>
+        <label className = {styles.rlabel}>Mast & Harbour</label>
         <br />
         <input id = {styles.rinput} type="checkbox"></input>
-        <label className = {styles.rlabel}>QUANCIOUS</label>
+        <label className = {styles.rlabel}>Dressberry</label>
         <br />
         <input id = {styles.rinput} type="checkbox"></input>
-        <label className = {styles.rlabel}>U.S. Polo Assn</label>
+        <label className = {styles.rlabel}>Roadster</label>
         <br />
         <input id = {styles.rinput} type="checkbox"></input>
-        <label className = {styles.rlabel}>Friskers</label>
+        <label className = {styles.rlabel}>HERE&NOW</label>
         <br />
         <input id = {styles.rinput} type="checkbox"></input>
-        <label className = {styles.rlabel}>Duke</label>
+        <label className = {styles.rlabel}>Celfie Design</label>
 
         <hr  style = {{borderTop:"none", borderBottom:"1px solid black", marginLeft:"-12%"}} />
 
