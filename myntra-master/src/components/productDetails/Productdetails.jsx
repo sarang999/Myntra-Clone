@@ -9,7 +9,9 @@ import {Footer} from "../footer/Footer";
 import{  useParams } from "react-router-dom";
 import axios from 'axios'
 import React from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch } from 'react-redux';
+import { postWishData } from '../../redux/Wishlist/action'
+import { postBagData } from '../../redux/Bag/action'
 
 
 
@@ -20,22 +22,29 @@ const useStyle = makeStyles({
 
     container: {
         marginTop: '6%',
-        marginLeft: '20'
+
+        width: '100%',
+       
     },
     
     main: {
         width: '99%',
-        display: 'flex'
+        display: 'flex',
+   
+        
+
     },
 
     flexDivleft:{
-        width: '68%',
-        marginRight: 20
+        width: '60%',
+        marginRight: 20,
+    
 
     },
 
     flexDivright:{
-        width: '30%'
+        width: '30%',
+       
     },
     star:{
         transform: 'scale(0.7)',
@@ -154,38 +163,38 @@ export const Productdeatils = () => {
                 
                 <div>
                         <p>
-                        Home/Clothing/{data.gender}'s clothing/Dresses/ <span style={{fontWeight: "bolder"}}>{data.categories}/More By {data.brand}</span>
+                        Home/Clothing/{data.gender}'s clothing/<span style={{fontWeight: "bolder"}}>{data.categories}/More By {data.brand}</span>
                         </p>
 
                         <div className={classes.main}>
                             <div className={classes.flexDivleft}>
                                 <div className={classes.leftImg}>
                                      <div className={classes.leftDivs}>
-                                         <img style={{width: '100%'}} src={data.images[0]}/>
+                                         <img style={{width: '100%'}} src={data.images.image1}/>
                                      </div>
                                      <div className={classes.leftDivs}>
-                                         <img style={{width: '100%'}}  src={data.images[1]}/>
+                                         <img style={{width: '100%'}}  src={data.images.image2}/>
                                      </div>
                                 </div>
                                 
                                 <div className={classes.leftImg}>
                                       <div className={classes.leftDivs}>
-                                          <img style={{width: '100%'}}  src={data.images[2]}/>
+                                          <img style={{width: '100%'}}  src={data.images.image3}/>
                                       </div>
                                       <div className={classes.leftDivs}>
-                                          <img style={{width: '100%'}}  src={data.images[3]}/>
+                                          <img style={{width: '100%'}}  src={data.images.image4}/>
                                       </div>
 
                                 </div >
                                 
-                                <div  className={classes.leftImg}>
+                                {/* <div  className={classes.leftImg}>
                                         <div className={classes.leftDivs}>
                                             <img style={{width: '100%'}}  src="https://raw.githubusercontent.com/ShaikRiyazuddin/Myntra_Clone/Sweta_myntra/src/images/big5.webp"/>
                                         </div>
                                         <div className={classes.leftDivs}>
                                             <img style={{width: '100%'}}  src="https://raw.githubusercontent.com/ShaikRiyazuddin/Myntra_Clone/Sweta_myntra/src/images/big2.webp"/>
                                         </div>
-                                </div>
+                                </div> */}
                                 
                         </div>
                          
@@ -193,23 +202,25 @@ export const Productdeatils = () => {
                         <div className={classes.flexDivright}>
                              <h2>{data.brand}</h2>
                              <h3 style={{color: 'grey', fontWeight:'lighter'}}>{data.title}</h3>
-                             <p>4.4 <StarIcon  className={classes.star}/>|13.8k Ratings</p>
+                             <p>{data.rating} <StarIcon  className={classes.star}/>|13.8k Ratings</p>
                              <hr/>
-                             <h3>Rs. 815 <span style={{textDecoration: "line-through", color: 'grey', fontWeight:"lighter"}}>Rs.{data.price}</span><span style={{color: 'red'}}> (66% OFF)</span></h3>
+                             <h3>Rs.{data.price} <span style={{textDecoration: "line-through", color: 'grey', fontWeight:"lighter"}}>Rs.{data.off_price}</span><span style={{color: 'red'}}> (66% OFF)</span></h3>
                              <h6 style={{color: 'teal'}}>inclusive of all taxes</h6>
 
                              <h4>SELECT <span style={{color: 'red'}}>SIZESIZE CHART </span></h4>
 
                              <div>
-                             <button className={classes.button} >XS</button>
-                             <button className={classes.button}>S</button>
-                             <button className={classes.button}>M</button>
-                             <button className={classes.button}>L</button>
-                             <button className={classes.button}>XL</button>
+                             <button className={classes.button} >{data.sizes[0]}</button>
+                             <button className={classes.button}>{data.sizes[1]}</button>
+                             <button className={classes.button}>{data.sizes[2]}</button>
+                             <button className={classes.button}>{data.sizes[3]}</button>
+                             <button className={classes.button}>{data.sizes[4]}</button>
+                             
                              </div>
 
-                             <button className={classes.big1}><ShoppingBagIcon className={classes.bag}/>ADD TO BAG</button>
-                             <button className={classes.big2}><FavoriteBorderOutlinedIcon style={{verticalAlign: 'text-bottom'}}/>WISHLIST</button>
+                             <button className={classes.big1}  onClick={()=>{dispatch(postBagData(data));alert("Product is succesfully added to Bag")}} ><ShoppingBagIcon className={classes.bag}/>ADD TO BAG</button>
+                             
+                             <button className={classes.big2}  onClick={()=>{dispatch(postWishData(data));alert("Product is succesfully added to Wishlist")}}><FavoriteBorderOutlinedIcon style={{verticalAlign: 'text-bottom'}}/>WISHLIST</button>
                              <h3>DELIVERY OPTIONS<span><LocalShippingOutlinedIcon style={{verticalAlign: 'text-bottom'}}/></span></h3>
                              <input placeholder="Enter A PIN code" className={classes.pin}/>
                              <h6>Please enter PIN code to check delivery time & Pay on Delivery Availability</h6>
@@ -219,7 +230,7 @@ export const Productdeatils = () => {
                              <p>Try & Buy might be available</p>
 
                              <h3>BEST OFFERS <span><LocalOfferOutlinedIcon style={{verticalAlign: 'text-bottom'}}/></span></h3>
-                             <h4>Best Price: Rs. 615</h4>
+                             <h4>Best Price: Rs. {data.price}</h4>
                              <li>Applicable on: Orders above Rs. 799 (only on first purchase)</li>
                              <li>Coupon code: HELLO200</li>
                              <li>Coupon Discount: Rs. 200 off (check cart for final savings)</li>
@@ -232,7 +243,7 @@ export const Productdeatils = () => {
                              <h6 style={{color: 'red'}}>View Plan</h6>
                              <hr/>
                              <h3>PRODUCT DETAILS<span><EventNoteOutlinedIcon style={{verticalAlign: 'text-bottom'}}/></span></h3>
-                             <p>Black and pink printed woven wrap dress with tie-up detail, has a v-neck, three-quarter sleeves, concealed zip closure, an attached lining, and flared hem</p>
+                             <p>{data.description}</p>
                              <h3>Material & Care</h3>
                              <p>100% polyester</p>
                              <p>Machine-wash</p>
@@ -289,7 +300,7 @@ export const Productdeatils = () => {
                             </div>
                         </div>
                 </div>
-                <Footer/>
+            
             </Box>
 
            
