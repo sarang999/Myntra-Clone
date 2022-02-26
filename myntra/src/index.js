@@ -25,7 +25,6 @@ function App() {
                 setCurrentTab('women')
             }}>women</button>
 
-            {/* {console.log(brandOffers)} */}
             {
                 dataToRender.banner.map((row, index) => {
                     return <Section imageList={row} key={index} />
@@ -38,6 +37,9 @@ function App() {
                         <Section imageList={row.imageList} />
                     </div>)
                 })
+            }
+            {
+                <Heading title={dataToRender.brandOffers.title} />
             }
             {
                 dataToRender.brandOffers.mat.map((row, index) => {
