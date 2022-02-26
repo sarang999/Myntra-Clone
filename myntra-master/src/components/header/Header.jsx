@@ -2,7 +2,7 @@ import { AppBar, Toolbar, makeStyles, Box, Typography} from "@material-ui/core";
 import { SearchBar } from "./SearchBar";
 import { Iconbuttons } from "./Iconbuttons";
 import { Inlinenav } from "./Inlinenav";
-// import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 // import {Men} from "./Men"
 
 
@@ -50,7 +50,8 @@ export  const Header = () =>
             <Toolbar>
                 {/* <Link to="/"> */}
                 <Box>
-                 <img src= {logoUrl} className={classes.logo}/>
+                    <Link to="/"> <img src= {logoUrl} className={classes.logo}/></Link>
+                
                  </Box>
                  {/* </Link> */}
                  <Box component="span" className={classes.container}>

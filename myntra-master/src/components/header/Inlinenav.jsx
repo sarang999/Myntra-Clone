@@ -1,7 +1,7 @@
 //import "../styles/header.css"
 import "../styles/inlinenav.css"
 
-
+import { Link } from "react-router-dom";
 
 export const Inlinenav = () =>
 {
@@ -12,9 +12,13 @@ export const Inlinenav = () =>
         <li>
             <a href="#">MEN</a>
             <div className="bigcontainer">
-                <div className="nav-column">
-                    <h3>Topwear</h3>
-                    <ul>
+                        <div className="nav-column">
+                        <Link to="/products">
+                        <h3>Topwear</h3>
+                         </Link>
+                  
+                            <ul>
+                               
                             <li><a href="">Topwear</a></li>
                             <li><a href="">T-Shirts</a></li>
                             <li><a href="">Casual Shirts</a></li>
