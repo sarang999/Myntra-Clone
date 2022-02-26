@@ -27,6 +27,7 @@ const useStyle = makeStyles(
 
 export const Iconbuttons = () =>{
     const userAuth = useSelector((state) => state.loginred.userAuth);
+    const username = useSelector(state => state.loginred.username);
     const classes = useStyle()
     const subURL = 'https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/plus_aef861.png';
     return(
@@ -36,8 +37,13 @@ export const Iconbuttons = () =>{
 
                                     <div className="dropdown">
                         <button className="dropbtn"><PersonOutlineOutlinedIcon/></button>
-                        <div className="dropdown-content">
-                                <h5>Welcome</h5>
+                    <div className="dropdown-content">
+                        
+
+                        {
+                            userAuth ? (<h5>Welcome { username}</h5>) : (  <h5>Welcome</h5>)
+                        }
+                              
                                 <p>To access account and manage orders</p>
                         <a>
                             
