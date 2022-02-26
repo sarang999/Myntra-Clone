@@ -13,7 +13,8 @@ import {Footer} from "../footer/Footer"
 const useStyle = makeStyles({
 
     container: {
-        marginTop: '6%'
+        marginTop: '6%',
+        marginLeft: '20'
     },
     
     main: {
@@ -21,10 +22,14 @@ const useStyle = makeStyles({
         display: 'flex'
     },
 
-    flexDiv:{
-        width: '50%',
-        marginRight: 30
+    flexDivleft:{
+        width: '60%',
+        marginRight: 20
 
+    },
+
+    flexDivright:{
+        width: '45%'
     },
     star:{
         transform: 'scale(0.7)',
@@ -127,7 +132,7 @@ export const Productdeatils = () => {
                         </p>
 
                         <div className={classes.main}>
-                            <div className={classes.flexDiv}>
+                            <div className={classes.flexDivleft}>
                                 <div className={classes.leftImg}>
                                      <div className={classes.leftDivs}>
                                          <img style={{width: '100%'}} src="https://raw.githubusercontent.com/ShaikRiyazuddin/Myntra_Clone/Sweta_myntra/src/images/big%20image1.webp"/>
@@ -159,7 +164,7 @@ export const Productdeatils = () => {
                         </div>
                          
                          
-                        <div className={classes.flexDiv}>
+                        <div className={classes.flexDivright}>
                              <h2>SASSAFRAS</h2>
                              <h3 style={{color: 'grey', fontWeight:'lighter'}}>Black & Pink Floral Printed Wrap Dress</h3>
                              <p>4.4 <StarIcon  className={classes.star}/>|13.8k Ratings</p>
@@ -210,7 +215,7 @@ export const Productdeatils = () => {
                     </div>
 
                        <div>
-                             <h3>SIMILAR PRODUCTS</h3>
+                             <h3 style={{marginLeft: "10px"}}>SIMILAR PRODUCTS</h3>
                              <div className={classes.similar}>
                                  <div className={classes.imgs}>
                                  <img className={classes.imgSize} src="https://raw.githubusercontent.com/ShaikRiyazuddin/Myntra_Clone/Sweta_myntra/src/images/pic1.webp"/>
