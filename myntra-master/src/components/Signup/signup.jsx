@@ -7,9 +7,9 @@ import "../Login/login.css";
 export const Signup = () => {
     
     const [details, setDetails] = useState({
-        yourname: "",
+        userdetails: "",
         email: "",
-        password: "",
+        mobile: "",
         number:"",
     });
 
@@ -21,9 +21,10 @@ export const Signup = () => {
     function postUsers(e) {
         e.preventDefault();
        //https://ecommyntra-fake-server-app.herokuapp.com/users
-        axios.post("http://localhost:3004/users", details)
+        axios.post("https://ecommyntra-fake-server-app.herokuapp.com/users", details)
             .then(function (res) {
                 // fetchData();
+            
             }).catch(function (err) {
                 console.log(err);
             });
@@ -51,11 +52,11 @@ export const Signup = () => {
                     postUsers(e);
                 }}>
                 
-                    <input type="text" placeholder="Enter your name" name="yourname" onChange={handleChange} />
+                    <input type="text" placeholder="Enter your name" name="userdetails" onChange={handleChange} />
                     
                     <input type="email" placeholder="Enter your email" name="email" onChange={handleChange}  />
                     
-                    <input type="password" placeholder="Create password" name="password" onChange={handleChange} />
+                    <input type="password" placeholder="Create password" name="mobile" onChange={handleChange} />
 
                     <input type="number" maxLength="10" placeholder="Enter Phone Number" name="number" onChange={handleChange} />
                     

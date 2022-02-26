@@ -4,7 +4,7 @@ import login_image from "./LoginImages/login_image.webp";
 import "./login.css";
 import { useDispatch, useSelector } from 'react-redux'
 import {loginProcess} from "../../redux/Login/Action"
-import {Navigate,Link} from "react-router-dom";
+import {Link,Navigate} from "react-router-dom";
 // import { useHistory } from "react-router-dom";
 import MobilenumberForm from "../../firebase/mobileinputform";
 
@@ -65,8 +65,8 @@ export const  MobileNumber = () => {
                             <div><hr/></div>
                         </div>
                             <h3>Sign In with Username</h3>
-
-                          <button className='login-useername'>LOGIN WITH USERNAME</button>
+                           <Link to="/loginwithusername"> <button className='login-useername'>LOGIN WITH USERNAME</button></Link>
+                         
                  
               
                             <p>Have trouble in logging in? <span className="conditions">Get help</span></p>
@@ -79,5 +79,5 @@ export const  MobileNumber = () => {
         </div>
           
     )
-        : (<Navigate to="" />)
+        : (<Navigate to="/" />)
 }
