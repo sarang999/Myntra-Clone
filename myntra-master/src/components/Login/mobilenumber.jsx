@@ -8,8 +8,6 @@ import {Link,useNavigate} from "react-router-dom";
 // import { useHistory } from "react-router-dom";
 
 
-
-
 export const MobileNumber = () => {
     let navigate = useNavigate();
     const [mobile, setMobile] = useState("");
@@ -77,6 +75,7 @@ export const MobileNumber = () => {
                   
                 </div>
             </div>
+         
         </div>
           
     ) : (<> {navigate('/login/userdetails')}</> );

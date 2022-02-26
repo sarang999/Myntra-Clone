@@ -9,8 +9,9 @@ export const Inlinenav = () =>
 
         <>
           <ul className="nav">
-        <li>
-            <a href="#">MEN</a>
+                <li>
+            <Link to="/menhomepage"><a href="#" className="men-link">MEN</a></Link>
+            
             <div className="bigcontainer">
                         <div className="nav-column">
                         <Link to="/products">
@@ -126,7 +127,9 @@ export const Inlinenav = () =>
                 </div>
             </div>
         </li>
-        <li><a href="#">WOMAN</a>
+                <li>
+                    <Link to="/womenhomepage"> <a href="#" className="women-link">WOMAN</a></Link>
+                   
            <div className="bigcontainer">
                 <div className="nav-column">
                 <Link to="/womensproducts">

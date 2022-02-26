@@ -18,7 +18,8 @@ import { Payment } from '../components/Payment/Payment.jsx';
 import { UserDetails } from "../components/Login/userdetails";
 import { Productdeatils } from "../components/productDetails/Productdetails";
 // import { WomensProducts } from "../components/ProductsPage/WomenProducts";
-
+import { Men } from '../components/mens_women/mens.js';
+import { Women } from "../components/mens_women/women.js";
 export const MyRoutes = () => {
     // let { id } = useParams();
     return (
@@ -39,7 +40,8 @@ export const MyRoutes = () => {
                 <Route path="/address" element={<Address />}></Route>
                 <Route path="/payment" element={<Payment />}></Route>
                 <Route path="/productsdetails/:id" element={<Productdeatils />}></Route>
-
+                <Route exact path="/menhomepage" element={<Men />} ></Route>
+                <Route exact path="/womenhomepage" element={<Women/>} ></Route>
             </Routes>
             <Footer />
 
