@@ -4,26 +4,17 @@ import './menswomen.css'
 import data from '../../assets/data';
 import Heading from './Heading'
 
-export const  MensWomen = () => {
+export const  Men = () => {
     const [currentTab, setCurrentTab] = useState('men');
 
     const { men, women } = data;
 
     let dataToRender = men;
 
-    if (currentTab === 'women') {
-        dataToRender = women;
-    }
+  
 
     return (
         <div>
-            <button onClick={() => {
-                setCurrentTab('men')
-            }}>men</button>
-            <button onClick={() => {
-                setCurrentTab('women')
-            }}>women</button>
-
             {
                 dataToRender.banner.map((row, index) => {
                     return <Section imageList={row} key={index} />
