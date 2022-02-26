@@ -2,10 +2,11 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "../Login/login.css";
-import { Navigate, Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import "../Login/login.css";
 export const Signup = () => {
     
+    const navigate = useNavigate();
     const [details, setDetails] = useState({
        
         mobilenumber: "",
@@ -49,6 +50,7 @@ export const Signup = () => {
                 <form className="signup-form" onSubmit={(e) => {
                     alert("Confirm for submitting");
                     postUsers(e);
+                    navigate('/login');
                 }}>
 
                     <input type="number" maxLength="10" placeholder="Enter your mobile number"
@@ -64,9 +66,9 @@ export const Signup = () => {
                     <input className="signup-submit" type="submit" value="CREATE ACCOUNT" />
                     
                 </form>
-                <Link to="/login">
+                {/* <Link to="/login">
                     <button className="send-to-username">Click here to Login</button>
-                </Link>
+                </Link> */}
                 <p>Have trouble in logging in? <span className="conditions">Get help</span></p>
             </div>
         </div>

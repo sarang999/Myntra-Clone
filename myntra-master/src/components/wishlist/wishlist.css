@@ -55,15 +55,18 @@
     font-weight: 500;
     position: absolute;
     margin-left: 198px;
-    margin-top: -308px;
+    margin-top: -304px;
     border-radius: 50%;
     color: rgb(29, 29, 29);
     background-color: silver;
+    justify-content: center;
 }
 
 .cancelIcon div {
     background: none;
     margin-top: -7px;
+    margin-left: 3.5px;
+   
 }
 
 .buttons {
@@ -83,12 +86,13 @@
 .flexPrice {
     /* width: 80%; */
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 .titleFont {
     font-weight: 600;
     color: #282C3F;
+    text-align: center;
 }
 
 .mrpFont {
@@ -96,6 +100,8 @@
     color: #282C3F;
     font-size: 14px;
     margin-top: 4px;
+    margin-left: 6px;
+    margin-right:6px;
     text-decoration-line: line-through;
 }
 
@@ -111,6 +117,7 @@
     font-weight: 300;
     color: #282C3F;
     font-size: 18px;
+    margin-left: 5px;
 }
 
 .btnCntShop {

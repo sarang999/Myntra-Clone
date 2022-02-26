@@ -10,7 +10,7 @@ import {
 import maxresdefault from "./images/maxresdefault.jpg";
 import wishlist from "./images/wishlist.png";
 import { postBagData } from '../../redux/Bag/action';
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 // import { postBagData } from '../../Redux/Bag/action';
 
 export const Wishlist = () => {
@@ -100,15 +100,17 @@ export const Wishlist = () => {
 
   return (
     <>
-      Wishlist
+    
       <div>
-        {" "}
+      
         {wishlistData.length !== 0 ? (
           <div>
             <br />
             <div className={"headingwish"}>
-              My Wishlist{" "}
-              <span className={"countFont"}> {wishlistData.length} items</span>{" "}
+
+              <span className={"countFont"}>
+              Items in the Wishlist  {" "}
+                {wishlistData.length}</span>{" "}
             </div>
 
             <div className={"cardCont"}>
@@ -118,9 +120,9 @@ export const Wishlist = () => {
                     <img src={e.images.image1} alt="" width="100%" />
                   </div>
                   <div className={"cancelIcon"}>
-                    <div onClick={() => handleDeleteWishlist(e.id)}> × </div>
+                    <div className="wish-movement" onClick={() => handleDeleteWishlist(e.id)}> × </div>
                   </div>
-                  <div className={"titleFont"}>{e.title}</div>
+                  <div className={"titleFont"}>{e.brand}</div>
                   <div className={"flexPrice"}>
                     <div className={"titleFont"}>₹{e.price}</div>
                     <div className={"mrpFont"}>₹{e.off_price}</div>

@@ -8,7 +8,7 @@
     color: white;
 }
 .afterlogin{
-    display: flex;
+    display: inline-block;
     border: 1px solid black;
     width: 55%;
     background-color: rgb(235, 122, 148);;
