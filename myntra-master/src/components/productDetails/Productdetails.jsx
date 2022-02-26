@@ -44,7 +44,7 @@ const useStyle = makeStyles({
 
     flexDivright:{
         width: '30%',
-       
+     
     },
     star:{
         transform: 'scale(0.7)',
