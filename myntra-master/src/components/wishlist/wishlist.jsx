@@ -9,9 +9,10 @@ import {
 } from "../../redux/Wishlist/action";
 import maxresdefault from "./images/maxresdefault.jpg";
 import wishlist from "./images/wishlist.png";
-
+import { postBagData } from '../../redux/Bag/action';
 import { Link, useNavigate } from "react-router-dom";
 // import { postBagData } from '../../Redux/Bag/action';
+
 export const Wishlist = () => {
   const [wishlistModel, setWishlistModel] = useState(false);
   const [isDeleted, setIsDeleted] = useState(false);
@@ -69,9 +70,9 @@ export const Wishlist = () => {
     setIsMovedToBag(true);
     setIsSizeSelected(false);
 
-    //   const updatedBag = wishlistData.filter(el=> el.id===idx )
-    //   dispatch( postBagData(updatedBag[0]) )
-    //   setIsSame("")
+      const updatedBag = wishlistData.filter(el=> el.id===idx )
+      dispatch( postBagData(updatedBag[0]) )
+      setIsSame("")
   };
 
   useEffect(() => {
@@ -228,7 +229,7 @@ export const Wishlist = () => {
                           <div
                             onClick={() => handleSizeSelect(e.id, size)}
                             className={
-                              isSame === size
+                              isSame == size
                                 ? `${"sizeSelectedDiv"}`
                                 : `${"sizeDiv"}`
                             }
