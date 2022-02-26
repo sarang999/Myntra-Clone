@@ -29,6 +29,8 @@ export const MyRoutes = () => {
                 <Route path="/products" element={<Products />}></Route>
                 <Route path="/womensPage" element={<WomensProducts />}></Route>
                 <Route path="/cart" element={<Bag />}></Route>
+                <Route exact path="/login/userdetails" element={<UserDetails />}></Route>
+                <Route exact path="/wishlist" element={<WishlistMainPage/>}></Route>
                 <Route path="/address" element={<Address />}></Route>
                 <Route path="/payment" element={<Payment />}></Route>
 
