@@ -85,13 +85,32 @@ export const Iconbuttons = () =>{
                   
           
         </Box>
-
+                      
+       
         <Box>
-                <Button className={classes.buttons}>
-                  <FavoriteBorderOutlinedIcon/>
+                               <Button className={classes.buttons}>
+
+                    {userAuth ? (
+                             <Link to="/wishlist">
+                   
+                            <FavoriteBorderOutlinedIcon />
+                   
+                    </Link>
+                       
+                        ):(
+                          
+                            <Link to="/login">
+                              <FavoriteBorderOutlinedIcon />
+                       
+                            </Link>
+                           
+                            )
+                    }
+                     </Button>
+                    </Box>
                 
-                </Button>
-        </Box>
+             
+       
        
        {/* <Link to="/cart"> */}
        <Box>
