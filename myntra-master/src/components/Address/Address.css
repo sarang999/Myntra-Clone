@@ -40,40 +40,54 @@
 
 /* -----------------------------------------------container ------------------------------------------*/
 #container {
+    width: 70%;
     display: flex;
     gap: 10%;
+    margin: auto;
 }
 
 /* --------------------------------------------box1---------------------------------------------- */
 #box1 {
-    margin-left: 20%;
-    border: 1px solid rgb(216, 215, 215);
+    /* margin-left: 20%; */
+    /* border: 1px solid rgb(216, 215, 215); */
     margin-top: 30px;
+    width: 50%;
     /* padding-left: 20px; */
 }
 
-#box1-1 {
-    padding-left: 20px;
-    border-bottom: 1px solid rgb(216, 215, 215);
+#checkbox {
+    width: 20px;
+    height: 15px;
+    /* margin-top: 30px;
+    margin-bottom: 30px; */
+    /* border: 1px solid black !important; */
+    /* color: rgb(255, 0, 85); */
+    /* background-color: rgb(255, 0, 85); */
 }
 
-/* input {
+#box1-1 {
+    /* padding-left: 20px; */
+    border: 1px solid rgb(216, 215, 215);
+    border-radius: 5px;
+}
+
+#box1-1>input {
     width: 90%;
     height: 40px;
-    padding-left: 10px;
+    /* padding-left: 10px; */
     margin-bottom: 15px;
     border: 1px solid rgb(216, 215, 215);
     border-radius: 5px;
-} */
+}
 
 .input {
-    width: 41%;
+    width: 50%;
     border: none;
     background-color: rgb(236, 236, 236);
 }
 
 #state {
-    margin-left: 15px;
+    /* margin-left: 15px; */
 }
 
 #box1-1-1 {
@@ -85,27 +99,29 @@
     padding: 5px 15px;
     font-size: 14px;
     border-radius: 20px;
+    width:10%;
+    background-color: white;
+    color: black;
+    margin-bottom: 20px;
+
 }
 
 #pink {
     margin-right: 10px;
-    color: rgb(255, 0, 85);
+    background-color: white;
     border: 1px solid rgb(255, 0, 85) !important;
 }
 
-#checkbox {
-    width: 20px;
-    height: 15px;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    /* border: 1px solid black !important; */
-    /* color: rgb(255, 0, 85); */
-    /* background-color: rgb(255, 0, 85); */
-}
+
 
 #pinkbtn {
     border: 1px solid rgb(216, 215, 215);
+    color: rgb(250, 250, 250);
+    background-color: rgb(255, 0, 85)  ;
+    width:100%;
     padding: 10px;
+    font-weight: bolder;
+    border-radius: 5px;
 }
 
 /* button {
@@ -119,8 +135,8 @@
 
 /* ---------------------------------------------------box2------------------------------------------- */
 #box2 {
-    margin-right: 15%;
-    margin-top: -20px;
+    /* margin-right: 15%; */
+    /* margin-top: -20px; */
     /* margin-left: 10%; */
 }
 
@@ -138,7 +154,7 @@
 }
 
 #Table1>tr>td:nth-child(2) {
-    padding-left: 50px;
+    /* padding-left: 50px; */
     text-align: right;
 }
 
@@ -165,6 +181,11 @@
 #discountMRP {
     color: #14cda8;
 }
-#totalitems{
+
+#totalitems {
     margin-top: 40px;
+}
+.mydivv{
+    line-height: 30px;
+    width:30%;
 }
