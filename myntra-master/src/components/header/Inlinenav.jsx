@@ -129,7 +129,10 @@ export const Inlinenav = () =>
         <li><a href="#">WOMAN</a>
            <div className="bigcontainer">
                 <div className="nav-column">
+                <Link to="/womensproducts">
                     <h3>Indian & Fusion Wear</h3>
+                         </Link>
+                
                     <ul>
                             <li><a href="">Kurtas & Suits</a></li>
                             <li><a href="">Kurtis, Tunics & Tops</a></li>
