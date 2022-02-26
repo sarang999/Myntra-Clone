@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+// import{  useParams } from "react-router-dom";
 import { Route, Routes } from "react-router";
 import { Products } from "../components/ProductsPage/products.jsx";
 import { WomensProducts } from "../components/ProductsPage/WomenProducts.jsx";
@@ -15,7 +16,10 @@ import { Bag } from '../components/Bag/Bag.jsx';
 import { Address } from '../components/Address/Address.jsx';
 import { Payment } from '../components/Payment/Payment.jsx';
 import { UserDetails } from "../components/Login/userdetails";
+import { Productdeatils } from "../components/productDetails/Productdetails";
+
 export const MyRoutes = () => {
+    // let { id } = useParams();
     return (
         <div>
             <Header />
@@ -33,6 +37,7 @@ export const MyRoutes = () => {
                 <Route exact path="/wishlist" element={<WishlistMainPage/>}></Route>
                 <Route path="/address" element={<Address />}></Route>
                 <Route path="/payment" element={<Payment />}></Route>
+                <Route path="/productsdetails/:id" element={<Productdeatils />}></Route>
 
             </Routes>
             <Footer />
