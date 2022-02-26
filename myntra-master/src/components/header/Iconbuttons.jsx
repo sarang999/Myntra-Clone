@@ -13,7 +13,7 @@ const useStyle = makeStyles(
 
             display: 'flex',
             flexDirection: 'row',
-            marginLeft: '4%'
+            // marginLeft: '4%'
 
         }
     }

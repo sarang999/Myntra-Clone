@@ -557,7 +557,8 @@ export const Inlinenav = () =>
                     <p style={{marginLeft: '18%'}}>Your daily inspiration for everything fashion</p>
                     
                    <img style={{width: '400px', height: '200px', marginLeft: "12%"}} src="https://constant.myntassets.com/web/assets/img/sudio-nav-banner.png"/>
-                   <button style={{width: '200px', height: '40px', marginLeft: "25%"}}>EXPLORE STUDIO</button>
+                   <button style={{width: '200px', height: '40px', marginLeft: "25%", marginBottom: '10px'}}>EXPLORE STUDIO</button>
+                   
                    </div>
                 </div>
             </div>

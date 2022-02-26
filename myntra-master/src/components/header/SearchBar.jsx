@@ -5,7 +5,7 @@ import { makeStyles, InputBase, Box} from '@material-ui/core';
 const useStyle = makeStyles(({
     search: {
         borderRadius: 2,
-        marginLeft: '6%',
+        marginLeft: '4%',
         marginTop: 10,
         width: '38%',
         backgroundColor: '#fff',

@@ -12,6 +12,7 @@ const useStyle = makeStyles(
     {
         header: {
             background: "white",
+            width: '100%',
             height: 80,
             boxShadow: " rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px",
            
@@ -30,11 +31,11 @@ const useStyle = makeStyles(
              display: 'flex',
              color: 'black',
              fontSize: 'bold',
-             paddingLeft: '3%'
+             paddingLeft: '1%'
          },
  
          subHeading: {
-             padding: 15,
+             padding: 10,
             
          }
        
