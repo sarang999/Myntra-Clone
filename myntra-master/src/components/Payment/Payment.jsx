@@ -1,11 +1,35 @@
 import React from 'react'
 import './Payment.css'
 import GooglePayButton from "@google-pay/button-react"
+import { useSelector,useDispatch } from 'react-redux'
+import { useEffect } from 'react'
+import { deleteBagData, getBagData, patchBagData, patchBagSizesData } from '../../redux/Bag/action';
+import { AddNav } from './AddNav'
+
 
 export const Payment = () => {
+    const dispatch = useDispatch()
+    useEffect(() => {
+        dispatch(getBagData())
+        // setBagModel(false)
+
+    }, [dispatch])
+    const bagD = useSelector(state => state.bag.bagData)
+    console.log(bagD)
+
+    let totalAmount = 0
+    bagD?.map((e) => totalAmount += Math.floor(Number(e.off_price) * ((100 - Number(e.discount)) / 100)))
+    console.log(totalAmount);
+
+    let totalMRP = 0
+    bagD?.map((e) => totalMRP += Math.floor(Number(e.off_price)))
+    console.log(totalMRP);
+
+    let totalDiscount = totalMRP - totalAmount;
+    console.log(totalDiscount);
     return (
         <div>
-
+            <AddNav/>
             <div id="container">
                 <div id="box1">
                     <div id="box1-1">
@@ -22,7 +46,7 @@ export const Payment = () => {
                             <div id="box1-2-1-1">
                                 <h5>
                                     <i className="fas fa-money-check-alt"></i> CASH ON DELIVERY
-                                    (CAH/CARD/UPI)
+                                    (CAsH/CARD/UPI)
                                 </h5>
                             </div>
                             <div id="box1-2-1-2">
@@ -54,7 +78,7 @@ export const Payment = () => {
                                     <i className="fas fa-info-circle"></i
                                     ></span>
                             </div>
-                            <button id="pink" onclick="paynow()">PAY NOW</button>
+                            <button id="pink">PAY NOW</button>
                             <div className='gbtn'>
                                 <GooglePayButton
                                     environment="TEST"
@@ -107,35 +131,37 @@ export const Payment = () => {
                         <div id="box1-3-2"><p className="pink">Apply Gift Card</p></div>
                     </div>
                 </div>
-                <div id="box2">
-                    <div id="box1-2-3">
-                        <h5 id="totalitems">PRICE DETAILS(0 item)</h5>
-                        <table id='Table1'>
-                            <tr>
-                                <td>Total MRP</td>
-                                <td id="totalMRP">₹</td>
-                            </tr>
-                            <tr>
-                                <td>Discount on MRP</td>
-                                <td id="discountMRP"><span className="green">-₹</span></td>
-                            </tr>
-
-                            <tr>
-                                <td>Convenienve Fee <span className="pink">Know More</span></td>
-                                <td>
-                                    <div>
-                                        <span className="linethrough">₹99</span>
-                                        <span className="green">FREE</span>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr id="totalamount">
-                                <td>Total Amount</td>
-                                <td id="totalamount2">₹</td>
-                            </tr>
-                        </table>
+                <div>
+                    <div className="fontBold font14 marginTop20">PRICE DETAILS ({bagD.length} Items)</div>
+                    <div className="priceFlex marginTop">
+                        <div>Total MRP</div>
+                        <div>₹{totalMRP}</div>
                     </div>
+                    <div className="priceFlex lineHeight">
+                        <div>Discount on MRP</div>
+                        <div className="teal">-₹{totalDiscount}</div>
+                    </div>
+                    <div className="priceFlex lineHeight">
+                        <div>Coupon Discount</div>
+                        <div className="pink cursor">Apply Coupon</div>
+                    </div>
+                    <div className="priceFlex borderBottom lineHeight">
+                        <div>Convenience Fee
+                            <span className="pink fontBold cursor" > Know More</span>
+                        </div>
+                        <div>
+                            <span className="lineThrough">₹99</span>
+                            <span className="teal"> FREE</span>
+                        </div>
+                    </div>
+                    <div className="priceFlex marginTop fontBold">
+                        <div>Total Amount</div>
+                        <div>₹{totalAmount}</div>
+                    </div>
+                   <div className="placeOrderBtn marginTop font14 fontBold cursor" >PLACE ORDER</div>
+
                 </div>
+
             </div></div>
     )
 }

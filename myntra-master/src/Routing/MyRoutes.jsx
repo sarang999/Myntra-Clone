@@ -28,8 +28,6 @@ export const MyRoutes = () => {
                 <Route exact path="/entermobilenumber" element={<Entermobile />}></Route>
                 <Route path="/products" element={<Products />}></Route>
                 <Route path="/womensPage" element={<WomensProducts />}></Route>
-
-
                 <Route path="/cart" element={<Bag />}></Route>
                 <Route path="/address" element={<Address />}></Route>
                 <Route path="/payment" element={<Payment />}></Route>
