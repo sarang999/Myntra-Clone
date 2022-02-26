@@ -7,6 +7,10 @@ import LocalOfferOutlinedIcon from '@mui/icons-material/LocalOfferOutlined';
 import EventNoteOutlinedIcon from '@mui/icons-material/EventNoteOutlined';
 import {Footer} from "../footer/Footer";
 import{  useParams } from "react-router-dom";
+import axios from 'axios'
+import React from 'react'
+import { useDispatch } from 'react-redux'
+
 
 
 
@@ -124,34 +128,52 @@ const useStyle = makeStyles({
 
 export const Productdeatils = () => {
     let { id } = useParams();
+    const [data, setData]=React.useState({});
+    const [loading, setLoading]=React.useState(true);
+    const dispatch = useDispatch();
     console.log(id);
     const classes = useStyle();
 
-    return(
+
+    const getData=(id)=>{
+        axios.get(`https://ecommyntra-fake-server-app.herokuapp.com/mens_product_data/${id}`)
+        .then((res)=>{
+           setData(res.data)
+           setLoading(false)
+       })
+    }
+
+    React.useEffect(()=>{
+        getData(id)
+    },[])
+  
+   
+
+    return(loading)?<>loading</>: (
             <Box className={classes.container}>
                 
                 <div>
                         <p>
-                        Home/Clothing/Women Clothing/Dresses/ <span style={{fontWeight: "bolder"}}>SASSAFRAS Dresses/More By SASSAFRAS</span>
+                        Home/Clothing/{data.gender}'s clothing/Dresses/ <span style={{fontWeight: "bolder"}}>{data.categories}/More By {data.brand}</span>
                         </p>
 
                         <div className={classes.main}>
                             <div className={classes.flexDivleft}>
                                 <div className={classes.leftImg}>
                                      <div className={classes.leftDivs}>
-                                         <img style={{width: '100%'}} src="https://raw.githubusercontent.com/ShaikRiyazuddin/Myntra_Clone/Sweta_myntra/src/images/big%20image1.webp"/>
+                                         <img style={{width: '100%'}} src={data.images[0]}/>
                                      </div>
                                      <div className={classes.leftDivs}>
-                                         <img style={{width: '100%'}}  src="https://raw.githubusercontent.com/ShaikRiyazuddin/Myntra_Clone/Sweta_myntra/src/images/big2.webp"/>
+                                         <img style={{width: '100%'}}  src={data.images[1]}/>
                                      </div>
                                 </div>
                                 
                                 <div className={classes.leftImg}>
                                       <div className={classes.leftDivs}>
-                                          <img style={{width: '100%'}}  src="https://raw.githubusercontent.com/ShaikRiyazuddin/Myntra_Clone/Sweta_myntra/src/images/big3.webp"/>
+                                          <img style={{width: '100%'}}  src={data.images[2]}/>
                                       </div>
                                       <div className={classes.leftDivs}>
-                                          <img style={{width: '100%'}}  src="https://raw.githubusercontent.com/ShaikRiyazuddin/Myntra_Clone/Sweta_myntra/src/images/big4.webp"/>
+                                          <img style={{width: '100%'}}  src={data.images[3]}/>
                                       </div>
 
                                 </div >
@@ -169,11 +191,11 @@ export const Productdeatils = () => {
                          
                          
                         <div className={classes.flexDivright}>
-                             <h2>SASSAFRAS</h2>
-                             <h3 style={{color: 'grey', fontWeight:'lighter'}}>Black & Pink Floral Printed Wrap Dress</h3>
+                             <h2>{data.brand}</h2>
+                             <h3 style={{color: 'grey', fontWeight:'lighter'}}>{data.title}</h3>
                              <p>4.4 <StarIcon  className={classes.star}/>|13.8k Ratings</p>
                              <hr/>
-                             <h3>Rs. 815 <span style={{textDecoration: "line-through", color: 'grey', fontWeight:"lighter"}}>Rs.2399</span><span style={{color: 'red'}}> (66% OFF)</span></h3>
+                             <h3>Rs. 815 <span style={{textDecoration: "line-through", color: 'grey', fontWeight:"lighter"}}>Rs.{data.price}</span><span style={{color: 'red'}}> (66% OFF)</span></h3>
                              <h6 style={{color: 'teal'}}>inclusive of all taxes</h6>
 
                              <h4>SELECT <span style={{color: 'red'}}>SIZESIZE CHART </span></h4>
