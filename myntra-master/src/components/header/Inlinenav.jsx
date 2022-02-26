@@ -226,22 +226,6 @@ export const Inlinenav = () =>
             </div>
         </li>
         
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
         <li>
             <a href="#">KIDS</a>
             <div>
@@ -452,16 +436,128 @@ export const Inlinenav = () =>
         
         </li>
 
+        <li><a href="#">BEAUTY</a>
+            <div>
+                <div class="nav-column">
+                    <h3 class="orange">Makeup</h3>
+                    <ul>
+                            <li><a>Makeup</a></li>
+                            <li><a>Lipstick</a></li>
+                            <li><a>Lip Gloss</a></li>
+                            <li><a>Lip Liner</a></li>
+                            <li><a>Mascara</a></li>
+                            <li><a>Eyeliner</a></li>
+                            <li><a>Kajal</a></li>
+                            <li><a>Eyeshadow</a></li>
+                            <li><a>Foundation</a></li>
+                            <li><a>Primer</a></li>
+                            <li><a>Concealer</a></li>
+                            <li><a>Compact</a></li>
+                            <li><a>Nail Polish</a></li>
+                    </ul>
+     
+                    <h3>Skincare, Bath & Body</h3>
+                    <ul>
+                            <li><a>Face Moisturiser</a></li>
+                            <li><a>Cleanser</a></li>
+                            <li><a>Masks & Peel</a></li>
+                            <li><a>Sunscreen</a></li>
+                            <li><a>Serum</a></li>
+                            <li><a>Face Wash</a></li>
+                            <li><a>Eye Cream</a></li>
+                            <li><a>Lip Balm</a></li>
+                            <li><a>Body Lotion</a></li>
+                            <li><a>Body Wash</a></li>
+                            <li><a>Body Scrub</a></li>
+                            <li><a>Hand Cream</a></li> 
+                            <hr/>
+                            <h3>Baby Care</h3>
+                            <h3>Masks</h3>    
+                    </ul>
+                </div>
+     
+                <div class="nav-column">
+                    <h3>Haircare</h3>
+                    <ul>
+                            <li><a>Shampoo</a></li>
+                            <li><a>Conditioner</a></li>
+                            <li><a>Hair Cream</a></li>
+                            <li><a>Hair Oil</a></li>
+                            <li><a>Hair Gel</a></li>
+                            <li><a>Hair Color</a></li>
+                            <li><a>Hair Serum</a></li>
+                            <li><a>Hair Accessory</a></li>
+                        <hr/>
+                        <h3>Fragrances</h3>
+                                <li><a>Perfume</a></li>
+                                <li><a>Deodorant</a></li>
+                                <li><a>Body Mist</a></li>
+                            
+                    </ul>
+                </div>
+     
+                <div class="nav-column">
+                     <h3>Appliances</h3>
+                    <ul>
+                        
+                            <li><a>Hair Straightener</a></li>
+                            <li><a>Hair Dryer</a></li>
+                            <li><a>Epilator</a></li>
+
+                            <hr/>
+                            <h3>Men's Grooming</h3>
+                                <li><a>Trimmers</a></li>
+                                <li><a>Beard Oil</a></li>
+                                <li><a>Hair Wax</a></li>
+                                    
+                    </ul>
+                  
+                    
+                </div>
+     
+                <div class="nav-column">
+                    <h3>Beauty Gift & Makeup Set</h3>
+                    <ul>
+                        <li><a>Beauty Gift</a></li>
+                        <li><a>Makeup Kit</a></li>
+                        <hr/>
+
+                    <h3>Premium Beauty</h3> 
+                    <h3>Wellness & Hygiene</h3>
+
+                    <hr/>
+                    <h3>Top Brands</h3>
+                                <li><a>Lakme</a></li>
+                                <li><a>Maybelline</a></li>
+                                <li><a>LOreal</a></li>
+                                <li><a>Philips</a></li>
+                                <li><a>Bath & Body Works</a></li>
+                                <li><a>THE BODY SHOP</a></li>
+                                <li><a>Biotique</a></li>
+                                <li><a>Mamaearth</a></li>
+                                <li><a>MCaffeine</a></li>
+                                <li><a>Nivea</a></li>
+                                <li><a>Lotus Herbals</a></li>
+                                <li><a>LOreal Professionnel</a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </li>
 
 
-
-
-
-
-
-
-        <li><a href="#">BEAUTY</a></li>
-        <li><a href="#">STUDIO</a></li>
+        <li><a href="#">STUDIO</a>
+        <div>
+                <div class="nav-column">
+                    {/* <img src=""/> */}
+                   <img src="https://constant.myntassets.com/web/assets/img/sudio-nav-banner.png"/>
+                   <button>EXPLORE STUDIO</button>
+                </div>
+            </div>
+        
+        </li>
+        
+        
       
     </ul>
 
