@@ -2,10 +2,8 @@
 
 Construct Week Project Masai School
 
-Live Project [https://myntraweb13.netlify.app/]()
-
-
-Project Source Server [https://github.com/Suraj8007/myntra-fake-server](https://github.com/Suraj8007/myntra-fake-server)
+ <a href="https://myntraweb13.netlify.app/"><li>Live Project</li></a>
+  <a href="https://github.com/Suraj8007/myntra-fake-server"><li>Project Source Server</li></a>
 
 ## Description
 
