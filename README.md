@@ -1,5 +1,6 @@
 # Myntra_Clone
-Construct Week Project Masai School  
+
+Construct Week Project Masai School
 
 Live Project [URL]()
 
@@ -61,30 +62,30 @@ Axios: Axios
 
 Styled Components: Styled Components
 
-
 # Members and Their Responsibilities
 
 # Images
 
 ### Home page
+
 ![image]()
 
+### Login Page
 
-### Login Page 
 ![image]()
-
 
 ### Men section
+
 ![image]()
 
+### Result page
 
-### Result page 
 ![image]()
-
 
 ### Description page
+
 ![image]()
 
-
 ### Bag & Checkout page
+
 ![image]()
