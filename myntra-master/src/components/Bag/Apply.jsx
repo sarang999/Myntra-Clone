@@ -69,7 +69,7 @@ export const Apply = () => {
                     <div>Total Amount</div>
                     <div>₹{totalAmount}</div>
                 </div>
-                <Link to="/address"> <div className="placeOrderBtn marginTop font14 fontBold cursor" >PLACE ORDER</div></Link>
+                <Link to="/address"> <div className="placeOrderBtn marginTop font14 fontBold cursor " >PLACE ORDER</div></Link>
 
             </div>
         </div>

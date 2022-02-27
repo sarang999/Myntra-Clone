@@ -69,7 +69,14 @@
   border-radius: 5px;
   cursor: pointer;
 }
+.closeBagModel{
+  cursor: pointer;
+  color: #FF3F6C;
+  font-weight: 700;
+  font-size: 20px;
+  
 
+}
 .offers {
   border: 1px solid rgb(214, 211, 211);
   padding: 15px;
@@ -258,6 +265,7 @@
   background-color: #FF3F6C;
   text-align: center;
   border-radius: 2px;
+  text-decoration: none;
 }
 .gridImage {
   display: grid;

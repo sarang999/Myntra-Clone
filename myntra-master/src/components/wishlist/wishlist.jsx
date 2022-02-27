@@ -11,9 +11,13 @@ import maxresdefault from "./images/maxresdefault.jpg";
 import wishlist from "./images/wishlist.png";
 import { postBagData } from '../../redux/Bag/action';
 import { Link } from "react-router-dom";
+
 // import { postBagData } from '../../Redux/Bag/action';
 
 export const Wishlist = () => {
+
+  
+
   const [wishlistModel, setWishlistModel] = useState(false);
   const [isDeleted, setIsDeleted] = useState(false);
   const [wishlistModelArray, setWishlistModelArray] = useState([]);
@@ -178,7 +182,8 @@ export const Wishlist = () => {
 
           <div>
             {" "}
-            <Link to="/bag">
+            
+            <Link to="/cart">
               <button className={"viewBagBtn"}>VIEW BAG</button>
             </Link>{" "}
           </div>

@@ -6,7 +6,6 @@ import {Link} from "react-router-dom"
 import "../styles/iconButtons.css";
 import { useSelector } from "react-redux";
 
-
 const useStyle = makeStyles(
     {
         buttons: {
@@ -25,7 +24,8 @@ const useStyle = makeStyles(
 
 
 
-export const Iconbuttons = () =>{
+export const Iconbuttons = () => {
+    const bagData = useSelector(state => state.bag.bagData);
     const userAuth = useSelector((state) => state.loginred.userAuth);
     const username = useSelector(state => state.loginred.username);
     const classes = useStyle();
@@ -125,15 +125,21 @@ export const Iconbuttons = () =>{
        {/* <Link to="/cart"> */}
        <Box>
            <Button className={classes.buttons}>
+                    {userAuth ?(
+                        <Badge badgeContent={bagData.length} color="secondary">
 
-                    <Badge badgeContent={4} color="secondary">
+                            <Link to="/cart"> <ShoppingBagOutlinedIcon /></Link>
+                            </Badge>)
+                           
+                        : (
+                            <Badge badgeContent={"0"} color="secondary">
 
-                        {userAuth ? (<Link to="/cart"> <ShoppingBagOutlinedIcon /></Link>) : (
-                            <Link to="/login">  <ShoppingBagOutlinedIcon/></Link>
-                            
-                      )}  
+                            <Link to="/login"> <ShoppingBagOutlinedIcon /></Link>
+                            </Badge>
+                            )
                    
-                     </Badge>
+                       
+}
               
             
            </Button>

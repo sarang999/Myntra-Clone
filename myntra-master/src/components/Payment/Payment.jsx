@@ -5,8 +5,7 @@ import { useSelector,useDispatch } from 'react-redux'
 import { useEffect } from 'react'
 import { deleteBagData, getBagData, patchBagData, patchBagSizesData } from '../../redux/Bag/action';
 import { AddNav } from './AddNav'
-
-
+import { Link } from 'react-router-dom';
 export const Payment = () => {
     const dispatch = useDispatch()
     useEffect(() => {
@@ -158,7 +157,12 @@ export const Payment = () => {
                         <div>Total Amount</div>
                         <div>₹{totalAmount}</div>
                     </div>
-                   <div className="placeOrderBtn marginTop font14 fontBold cursor" >PLACE ORDER</div>
+
+                    <Link to="/">
+                    <div className="placeOrderBtn marginTop font14 fontBold cursor"
+                        onClick={()=>{alert("Order has been Placed Successfully")}}
+                        >PLACE ORDER</div>
+                        </Link>
 
                 </div>
 
