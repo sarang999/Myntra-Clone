@@ -46,7 +46,7 @@ export const Payment = () => {
                             <div id="box1-2-1-1">
                                 <h5>
                                     <i className="fas fa-money-check-alt"></i> CASH ON DELIVERY
-                                    (CAsH/CARD/UPI)
+                                    (CASH/CARD/UPI)
                                 </h5>
                             </div>
                             <div id="box1-2-1-2">

@@ -82,6 +82,8 @@ body {
 
 #box1-2-1 {
     width: 40%;
+    background-color: rgb(216, 215, 215);
+
 }
 
 #box1-2-1>div {
@@ -101,15 +103,16 @@ body {
 #box1-2-2 {
     margin-top: -20px;
 }
+
 /* Please use className or ID */
-/* input {
-    width: 90%;
+#box1-2-2>input {
+    width: 80%;
     height: 40px;
     border-radius: 5px;
     border: 1px solid rgb(216, 215, 215);
     margin-bottom: 20px;
     padding-left: 10px;
-} */
+}
 
 #checkbox {
     height: 15px;
@@ -121,14 +124,15 @@ body {
 }
 
 #pink {
-    width: 90%;
+    width: 80%;
     padding: 12px;
     font-weight: bold;
     font-size: 16px;
     background-color: rgb(250, 46, 114);
     color: white;
     border: none;
-    /* margin-bottom: 20px; */
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 #box1-3 {
@@ -196,11 +200,15 @@ body {
 #discountMRP {
     color: #14cda8;
 }
-.string{
+
+.string {
     margin: auto;
 }
-.gbtn{
-    margin: auto;
-    margin-left: 100px;
+
+.gbtn {
+    width: 80%;
+    /* margin: auto; */
+    /* margin-left: 100px; */
     margin-top: 10px;
+    margin-bottom: 20px;
 }
