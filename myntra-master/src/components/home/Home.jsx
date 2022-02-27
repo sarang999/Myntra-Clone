@@ -149,7 +149,7 @@ export const Home = () => {
           <img src={catDivImg12} className={classes.catDiv} />
         </Box>
 
-        <Footer />
+        {/* <Footer /> */}
       </Box>
     </>
   );
