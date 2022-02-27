@@ -143,10 +143,12 @@ export const Wishlist = () => {
             {/* Footer here */}
           </div>
         ) : (
-          <div>
+          <div  className="wish-continue-shop" >
             <img src={wishlist} alt="Wishlist is empty" width="100%" />
-            <Link to="/">
-              <button className={"btnCntShop"}>CONTINUE SHOPPING</button>
+              <Link to="/">
+                <div  className="wish-continue-shop">
+                  <button className={"btnCntShop"}>CONTINUE SHOPPING</button>
+                  </div>
             </Link>
           </div>
         )}

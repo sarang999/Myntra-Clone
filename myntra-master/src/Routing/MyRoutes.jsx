@@ -32,14 +32,14 @@ export const MyRoutes = () => {
                 <Route exact path="/otpverified" element={<Verified />}></Route>
                 <Route exact path="/signupform" element={<Signup />}></Route>
                 <Route exact path="/entermobilenumber" element={<Entermobile />}></Route>
-                <Route path="/products" element={<Products />}></Route>
-                <Route path="/womensproducts" element={<WomensProducts />}></Route>
-                <Route path="/cart" element={<Bag />}></Route>
+                <Route exact path="/products" element={<Products />}></Route>
+                <Route exact path="/womensproducts" element={<WomensProducts />}></Route>
+                <Route exact path="/cart" element={<Bag />}></Route>
                 <Route exact path="/login/userdetails" element={<UserDetails />}></Route>
                 <Route exact path="/wishlist" element={<WishlistMainPage/>}></Route>
-                <Route path="/address" element={<Address />}></Route>
-                <Route path="/payment" element={<Payment />}></Route>
-                <Route path="/productsdetails/:id" element={<Productdeatils />}></Route>
+                <Route exact path="/address" element={<Address />}></Route>
+                <Route exact path="/payment" element={<Payment />}></Route>
+                <Route exact path="/productsdetails/:id" element={<Productdeatils />}></Route>
                 <Route exact path="/menhomepage" element={<Men />} ></Route>
                 <Route exact path="/womenhomepage" element={<Women/>} ></Route>
             </Routes>

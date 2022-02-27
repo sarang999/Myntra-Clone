@@ -127,7 +127,12 @@ export const Iconbuttons = () =>{
            <Button className={classes.buttons}>
 
                     <Badge badgeContent={4} color="secondary">
-                    <ShoppingBagOutlinedIcon/>
+
+                        {userAuth ? (<Link to="/cart"> <ShoppingBagOutlinedIcon /></Link>) : (
+                            <Link to="/login">  <ShoppingBagOutlinedIcon/></Link>
+                            
+                      )}  
+                   
                      </Badge>
               
             

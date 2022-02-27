@@ -2,7 +2,7 @@
 import "../styles/inlinenav.css"
 
 import { Link } from "react-router-dom";
-
+import { useSelector } from "react-redux";
 export const Inlinenav = () =>
 {
     return(
