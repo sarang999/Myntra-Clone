@@ -236,7 +236,7 @@ export const Inlinenav = () => {
           <Link to="/womenhomepage">
             {" "}
             <a href="#" className="women-link">
-              WOMAN
+              WOMEN
             </a>
           </Link>
 
