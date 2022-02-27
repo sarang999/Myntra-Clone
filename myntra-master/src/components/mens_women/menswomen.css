@@ -1,18 +1,19 @@
 .four-fr {
-    width: 25%;
-  }
-  
-  .five-fr {
-    width: 20%;
-  }
-  
-  .six-fr {
-    width: 16.66%;
-  }
-  
-  .full-width {
-    width: 100%;
-  }
-  .menspage-size-zero{
-    font-size: 0;
-  }
+  width: 25%;
+}
+
+.five-fr {
+  width: 20%;
+}
+
+.six-fr {
+  width: 16.66%;
+}
+
+.full-width {
+  width: 100%;
+}
+.menspage-size-zero {
+  margin-top: 100px;
+  font-size: 0;
+}

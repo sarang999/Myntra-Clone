@@ -9,15 +9,12 @@ import {
 } from "../../redux/Wishlist/action";
 import maxresdefault from "./images/maxresdefault.jpg";
 import wishlist from "./images/wishlist.png";
-import { postBagData } from '../../redux/Bag/action';
+import { postBagData } from "../../redux/Bag/action";
 import { Link } from "react-router-dom";
 
 // import { postBagData } from '../../Redux/Bag/action';
 
 export const Wishlist = () => {
-
-  
-
   const [wishlistModel, setWishlistModel] = useState(false);
   const [isDeleted, setIsDeleted] = useState(false);
   const [wishlistModelArray, setWishlistModelArray] = useState([]);
@@ -74,9 +71,9 @@ export const Wishlist = () => {
     setIsMovedToBag(true);
     setIsSizeSelected(false);
 
-      const updatedBag = wishlistData.filter(el=> el.id===idx )
-      dispatch( postBagData(updatedBag[0]) )
-      setIsSame("")
+    const updatedBag = wishlistData.filter((el) => el.id === idx);
+    dispatch(postBagData(updatedBag[0]));
+    setIsSame("");
   };
 
   useEffect(() => {
@@ -104,17 +101,14 @@ export const Wishlist = () => {
 
   return (
     <>
-    
       <div>
-      
         {wishlistData.length !== 0 ? (
           <div>
             <br />
             <div className={"headingwish"}>
-
               <span className={"countFont"}>
-              Items in the Wishlist  {" "}
-                {wishlistData.length}</span>{" "}
+                Items in the Wishlist {wishlistData.length}
+              </span>{" "}
             </div>
 
             <div className={"cardCont"}>
@@ -124,7 +118,13 @@ export const Wishlist = () => {
                     <img src={e.images.image1} alt="" width="100%" />
                   </div>
                   <div className={"cancelIcon"}>
-                    <div className="wish-movement" onClick={() => handleDeleteWishlist(e.id)}> × </div>
+                    <div
+                      className="wish-movement"
+                      onClick={() => handleDeleteWishlist(e.id)}
+                    >
+                      {" "}
+                      ×{" "}
+                    </div>
                   </div>
                   <div className={"titleFont"}>{e.brand}</div>
                   <div className={"flexPrice"}>
@@ -147,12 +147,12 @@ export const Wishlist = () => {
             {/* Footer here */}
           </div>
         ) : (
-          <div  className="wish-continue-shop" >
+          <div className="wish-continue-shop">
             <img src={wishlist} alt="Wishlist is empty" width="100%" />
-              <Link to="/">
-                <div  className="wish-continue-shop">
-                  <button className={"btnCntShop"}>CONTINUE SHOPPING</button>
-                  </div>
+            <Link to="/">
+              <div className="wish-continue-shop">
+                <button className={"btnCntShop"}>CONTINUE SHOPPING</button>
+              </div>
             </Link>
           </div>
         )}
@@ -182,7 +182,6 @@ export const Wishlist = () => {
 
           <div>
             {" "}
-            
             <Link to="/cart">
               <button className={"viewBagBtn"}>VIEW BAG</button>
             </Link>{" "}

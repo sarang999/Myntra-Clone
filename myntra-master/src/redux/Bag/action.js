@@ -1,142 +1,154 @@
 import axios from "axios";
 
 export const postBagRequest = () => {
-    return {
-        type: "POST_BAG_REQUEST"
-    }
-}
+  return {
+    type: "POST_BAG_REQUEST",
+  };
+};
 
 export const postBagSuccess = () => {
-    return {
-        type: "POST_BAG_SUCCESS"
-    }
-}
+  return {
+    type: "POST_BAG_SUCCESS",
+  };
+};
 
 export const postBagFailure = (err) => {
-    return {
-        type: "POST_BAG_FAILURE",
-        payload: err
-    }
-}
+  return {
+    type: "POST_BAG_FAILURE",
+    payload: err,
+  };
+};
 
 export const getBagRequest = () => {
-    return {
-        type: "GET_BAG_REQUEST"
-    }
-}
+  return {
+    type: "GET_BAG_REQUEST",
+  };
+};
 
 export const getBagSuccess = (payload) => {
-    return {
-        type: "GET_BAG_SUCCESS",
-        payload
-    }
-}
+  return {
+    type: "GET_BAG_SUCCESS",
+    payload,
+  };
+};
 
 export const getBagFailure = (err) => {
-    return {
-        type: "GET_BAG_FAILURE",
-        payload: err
-    }
-}
+  return {
+    type: "GET_BAG_FAILURE",
+    payload: err,
+  };
+};
 
 export const deleteBagRequest = () => {
-    return {
-        type: "DELETE_BAG_REQUEST"
-    }
-}
+  return {
+    type: "DELETE_BAG_REQUEST",
+  };
+};
 
 export const deleteBagSuccess = () => {
-    return {
-        type: "DELETE_BAG_SUCCESS"
-    }
-}
+  return {
+    type: "DELETE_BAG_SUCCESS",
+  };
+};
 
 export const deleteBagFailure = (err) => {
-    return {
-        type: "DELETE_BAG_FAILURE",
-        payload: err
-    }
-}
+  return {
+    type: "DELETE_BAG_FAILURE",
+    payload: err,
+  };
+};
 
 export const patchBagRequest = () => {
-    return {
-        type: "PATCH_BAG_REQUEST"
-    }
-}
+  return {
+    type: "PATCH_BAG_REQUEST",
+  };
+};
 
 export const patchBagSuccess = () => {
-    return {
-        type: "PATCH_BAG_SUCCESS"
-    }
-}
+  return {
+    type: "PATCH_BAG_SUCCESS",
+  };
+};
 
 export const patchBagFailure = (err) => {
-    return {
-        type: "PATCH_BAG_FAILURE",
-        payload: err
-    }
-}
+  return {
+    type: "PATCH_BAG_FAILURE",
+    payload: err,
+  };
+};
 
-export const postBagData = payload => dispatch => {
-    dispatch( postBagRequest() )
+export const postBagData = (payload) => (dispatch) => {
+  dispatch(postBagRequest());
 
-    return axios.post("https://ecommyntra-fake-server-app.herokuapp.com/bag", payload )
-    .then(res => {
-        dispatch( postBagSuccess() )
-        dispatch( getBagData() )
+  return axios
+    .post("https://ecommyntra-fake-server-app.herokuapp.com/bag", payload)
+    .then((res) => {
+      dispatch(postBagSuccess());
+      dispatch(getBagData());
     })
-    .catch(err=> {
-        dispatch( postBagFailure() )
-    })
-}
+    .catch((err) => {
+      dispatch(postBagFailure());
+    });
+};
 
-export const patchBagData = (clickedId, isQtySame) => dispatch => {
-    dispatch( patchBagRequest() )
+export const patchBagData = (clickedId, isQtySame) => (dispatch) => {
+  dispatch(patchBagRequest());
 
-    return axios.patch(`https://ecommyntra-fake-server-app.herokuapp.com/bag/${clickedId}`, { quantity: `${isQtySame}` } )
-    .then(res => {
-        dispatch( patchBagSuccess() )
-        dispatch( getBagData() )
+  return axios
+    .patch(
+      `https://ecommyntra-fake-server-app.herokuapp.com/bag/${clickedId}`,
+      { quantity: `${isQtySame}` }
+    )
+    .then((res) => {
+      dispatch(patchBagSuccess());
+      dispatch(getBagData());
     })
-    .catch(err=> {
-        dispatch( patchBagFailure() )
-    })
-}
+    .catch((err) => {
+      dispatch(patchBagFailure());
+    });
+};
 
-export const patchBagSizesData = (clickedSizesId, isSizesSame) => dispatch => {
-    dispatch( patchBagRequest() )
+export const patchBagSizesData =
+  (clickedSizesId, isSizesSame) => (dispatch) => {
+    dispatch(patchBagRequest());
 
-    return axios.patch(`https://ecommyntra-fake-server-app.herokuapp.com/bag/${clickedSizesId}`, { selected_size: `${isSizesSame}` } )
-    .then(res => {
-        dispatch( patchBagSuccess() )
-        dispatch( getBagData() )
-    })
-    .catch(err=> {
-        dispatch( patchBagFailure() )
-    })
-}
+    return axios
+      .patch(
+        `https://ecommyntra-fake-server-app.herokuapp.com/bag/${clickedSizesId}`,
+        { selected_size: `${isSizesSame}` }
+      )
+      .then((res) => {
+        dispatch(patchBagSuccess());
+        dispatch(getBagData());
+      })
+      .catch((err) => {
+        dispatch(patchBagFailure());
+      });
+  };
 
-export const deleteBagData = (idx) => dispatch => {
-    // dispatch( deleteBagRequest() )
+export const deleteBagData = (idx) => (dispatch) => {
+  // dispatch( deleteBagRequest() )
 
-    return axios.delete(`https://ecommyntra-fake-server-app.herokuapp.com/bag/${idx}` )
-    .then(res => {
-        dispatch( deleteBagSuccess() )
-        dispatch( getBagData() )
+  return axios
+    .delete(`https://ecommyntra-fake-server-app.herokuapp.com/bag/${idx}`)
+    .then((res) => {
+      dispatch(deleteBagSuccess());
+      dispatch(getBagData());
     })
-    .catch(err=> {
-        dispatch( deleteBagFailure() )
-    })
-}
+    .catch((err) => {
+      dispatch(deleteBagFailure());
+    });
+};
 
-export const getBagData = payload => dispatch => {
-    // dispatch( getBagRequest() )
+export const getBagData = (payload) => (dispatch) => {
+  // dispatch( getBagRequest() )
 
-    return axios.get("https://ecommyntra-fake-server-app.herokuapp.com/bag", payload )
-    .then(res => {
-        dispatch( getBagSuccess(res.data) )
+  return axios
+    .get("https://ecommyntra-fake-server-app.herokuapp.com/bag", payload)
+    .then((res) => {
+      dispatch(getBagSuccess(res.data));
     })
-    .catch(err=> {
-        dispatch( getBagFailure() )
-    })
-}
+    .catch((err) => {
+      dispatch(getBagFailure());
+    });
+};

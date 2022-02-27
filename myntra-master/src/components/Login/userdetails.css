@@ -1,46 +1,46 @@
-.userdetails-main{
+.userdetails-main {
   background-color: pink;
   margin: auto;
   padding: 20px;
   text-align: center;
 }
-.userdetails-subdiv{
-    color: white;
+.userdetails-subdiv {
+  color: white;
 }
-.afterlogin{
-    display: inline-block;
-    border: 1px solid black;
-    width: 55%;
-    background-color: rgb(235, 122, 148);;
-    margin-top: 15vh;
-    justify-content:space-between;
-    text-align: center;
-    box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
+.afterlogin {
+  display: inline-block;
+  border: 1px solid black;
+  width: 55%;
+  background-color: rgb(235, 122, 148);
+  margin-top: 15vh;
+  justify-content: space-between;
+  text-align: center;
+  box-shadow: 5px 5px blue, 10px 10px red, 15px 15px green;
 }
-.imgfirework{
-    padding: 25px;
-    width: 20%;
+.imgfirework {
+  padding: 25px;
+  width: 20%;
 }
-.loginbutton1{
-    width: 20%;
-    height: 45px;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 8px;
-    background-color: rgb(255,63,108);
-    font-size: 22px;
-    cursor: pointer;
+.loginbutton1 {
+  width: 20%;
+  height: 45px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 8px;
+  background-color: rgb(255, 63, 108);
+  font-size: 22px;
+  cursor: pointer;
 }
-.loginbutton2{
-    width: 20%;
-    height: 45px;
-    border: none;
-    padding: 8px;
-    outline: none;
-    margin: 25px;
-    color:white;
-    background-color: rgb(255,63,108);
-    font-size: 22px;
-    cursor: pointer;
+.loginbutton2 {
+  width: 20%;
+  height: 45px;
+  border: none;
+  padding: 8px;
+  outline: none;
+  margin: 25px;
+  color: white;
+  background-color: rgb(255, 63, 108);
+  font-size: 22px;
+  cursor: pointer;
 }

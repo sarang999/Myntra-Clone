@@ -1,10 +1,9 @@
-
-import {MyRoutes} from './Routing/MyRoutes';
+import { MyRoutes } from "./Routing/MyRoutes";
 
 function App() {
   return (
     <div className="App">
-     <MyRoutes />
+      <MyRoutes />
     </div>
   );
 }
