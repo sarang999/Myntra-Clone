@@ -48,12 +48,14 @@ export const Signup = () => {
             <div className="signup-main">
                 <h3>Complete your Sign Up</h3>
                 <form className="signup-form" onSubmit={(e) => {
+                    
                     alert("Confirm for submitting");
                     postUsers(e);
+                  
                     navigate('/login');
                 }}>
 
-                    <input type="number" maxLength="10" placeholder="Enter your mobile number"
+                    <input type="number" minLength={10} maxLength={10} placeholder="Enter your mobile number"
                        required name="mobilenumber" onChange={handleChange} />
                      
                     <input type="username" placeholder="Enter your username" name="username" required onChange={handleChange}
