@@ -27,7 +27,7 @@
     padding: 10px 25px;
     font-weight:bold;
     letter-spacing: 1px;
-    margin-top: 2%;
+    margin-top: 60px;
     margin-bottom: 5%;
 }
 .loginbutton + p{
@@ -62,6 +62,7 @@
     text-align: left;
     padding: 60px;
     box-sizing: border-box;
+    margin-top: 60px;
 }
 .otp-main > img{
     width: 90px;
@@ -111,6 +112,7 @@
     text-align: center;
     padding: 30px;
     box-sizing: border-box;
+    margin-top: 60px;
 }
 
 .verified-main>img{
@@ -171,6 +173,7 @@
     padding: 60px;
     box-sizing: border-box;
     text-align: left;
+    margin-top: 60px;
 }
 .username-login-main > p{
     color: #282C3FCC;
@@ -221,6 +224,7 @@
     padding: 60px;
     box-sizing: border-box;
     text-align: left;
+    margin-top: 60px;
 }
 .signup-main> p{
     color: #282C3FCC;
