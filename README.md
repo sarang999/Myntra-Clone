@@ -2,11 +2,8 @@
 
 Construct Week Project Masai School
 
-Live Project [URL]()
-
-[Project Source UI]()
-
-[Project Source Server]()
+ <a href="https://myntraweb13.netlify.app/"><li>Live Project</li></a>
+  <a href="https://github.com/Suraj8007/myntra-fake-server"><li>Project Source Server</li></a>
 
 ## Description
 
@@ -62,7 +59,18 @@ Axios: Axios
 
 Styled Components: Styled Components
 
-# Members and Their Responsibilities
+<!-- # Members and Their Responsibilities -->
+  <div id="con">
+    <h1>Contributors</h1>
+    <hr>
+    <ul>
+      <a href="https://github.com/ShaikRiyazuddin"><li>Shaik Riyazuddin</li></a>
+  <a href="https://github.com/Suraj8007"><li>Suraj Ughade</li></a>
+  <a href="https://github.com/sarang999"><li>Sarang Chaudhary</li></a>
+   <a href="https://github.com/Sweta-Swarnakar"><li>Sweta Swarnakar</li></a>
+      <a href="https://github.com/akasaurabhverma"><li>Saurabh Verma</li></a>
+    </ul>
+    </div>
 
 # Images
 
