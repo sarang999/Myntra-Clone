@@ -2,9 +2,8 @@
 
 Construct Week Project Masai School
 
-Live Project [URL]()
+Live Project [URL]("https://myntraweb13.netlify.app/")
 
-[Project Source UI]()
 
 [Project Source Server]()
 
