@@ -84,7 +84,7 @@ export const MobileNumber = () => {
               <h3>Click below for Signup</h3>
               <Link to="/entermobilenumber">
                 {" "}
-                <button className="login-useername">REGISTER NOW</button>
+                <button className="login-username">REGISTER NOW</button>
               </Link>
 
               <p>
