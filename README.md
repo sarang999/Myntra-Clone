@@ -105,7 +105,7 @@ Styled Components: Styled Components
 ### Cart page
 ![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/cart.png?raw=true)
  ---
- ### checkout page
+ ### Checkout page
 
  ![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/addPay.png?raw=true)
  
