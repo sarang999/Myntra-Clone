@@ -76,24 +76,31 @@ Styled Components: Styled Components
 
 ### Home page
 
-![image]()
+![image](https://github.com/sarang999/Myntra_Clone/blob/main/myntra-master/src/readmeimages/home.png?raw=true)
 
 ### Login Page
 
+![image](https://github.com/sarang999/Myntra_Clone/blob/main/myntra-master/src/readmeimages/login.png?raw=true)
+---
+<!-- ![image](https://github.com/sarang999/Myntra_Clone/blob/main/myntra-master/src/readmeimages/login1.png?raw=true)
+---
+![image](https://github.com/sarang999/Myntra_Clone/blob/main/myntra-master/src/readmeimages/otp.png?raw=true)
+---
+![image](https://github.com/sarang999/Myntra_Clone/blob/main/myntra-master/src/readmeimages/login2.png?raw=true) -->
+
+### Product page
+
+![image](https://github.com/sarang999/Myntra_Clone/blob/main/myntra-master/src/readmeimages/prod.png?raw=true)
+
+### Product details page
+
 ![image]()
 
-### Men section
+### Wishlist page
 
-![image]()
+![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/wish1.png?raw=true)
+---
+![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/wish3.png?raw=true)
 
-### Result page
-
-![image]()
-
-### Description page
-
-![image]()
-
-### Bag & Checkout page
 
 ![image]()
