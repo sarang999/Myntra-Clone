@@ -94,7 +94,7 @@ Styled Components: Styled Components
 
 ### Product details page
 
-![image]()
+![image](https://i.ibb.co/mB0TYnj/Screenshot-357.png)
 
 ### Wishlist page
 
@@ -103,4 +103,4 @@ Styled Components: Styled Components
 ![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/wish3.png?raw=true)
 
 
-![image]()
+![image](https://i.ibb.co/mB0TYnj/Screenshot-357.png)
