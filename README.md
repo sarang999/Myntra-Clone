@@ -103,4 +103,4 @@ Styled Components: Styled Components
 ![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/wish3.png?raw=true)
 
 
-![image](https://i.ibb.co/mB0TYnj/Screenshot-357.png)
+![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/cart.png?raw=true)
