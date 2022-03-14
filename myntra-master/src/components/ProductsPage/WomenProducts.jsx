@@ -352,7 +352,8 @@ export const WomensProducts = () => {
                       style={{ marginLeft: "-12px", width: "105%" }}
                       className={styles.wishButton}
                     >
-                      <FaRegHeart className={styles.iconHeart} /> WISHLIST{" "}
+                      <FaRegHeart className={styles.iconHeart} />SEE PRODUCT
+                        DETAILS{" "}
                     </button>
                     <div className={styles.prodBrand}>{item.brand}</div>
                     {/* <div>{item.description}</div> */}
