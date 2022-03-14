@@ -94,7 +94,7 @@ Styled Components: Styled Components
 
 ### Product details page
 
-![image](https://i.ibb.co/mB0TYnj/Screenshot-357.png)
+![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/prodDetails.png?raw=true)
 
 ### Wishlist page
 
@@ -102,5 +102,10 @@ Styled Components: Styled Components
 ---
 ![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/wish3.png?raw=true)
 
-
+### Cart page
 ![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/cart.png?raw=true)
+ ---
+ ### checkout page
+
+ ![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/addPay.png?raw=true)
+ 
