@@ -1,9 +1,9 @@
-# Myntra_Clone
+# Myntra Clone
 
 Construct Week Project Masai School
 
  <a href="https://myntraweb13.netlify.app/"><li>Live Project</li></a>
-  <a href="https://github.com/Suraj8007/myntra-fake-server"><li>Project Source Server</li></a>
+ <a href="https://github.com/Suraj8007/myntra-fake-server"><li>Project Source Server</li></a>
 
 ## Description
 
@@ -13,7 +13,7 @@ Myntra is an Indian fashion e-commerce company headquartered in Bengaluru, India
 
 ### Features
 
-- SignIn with Mobile OTP Authentication
+- SignIn with Mobile OTP Authentication using firebase
 - SignUp
 - Browse Products based on section
 - Search Products with color, brands.
@@ -64,48 +64,56 @@ Styled Components: Styled Components
     <h1>Contributors</h1>
     <hr>
     <ul>
+      <a href="https://github.com/sarang999"><li>Sarang Chaudhary</li></a>
       <a href="https://github.com/ShaikRiyazuddin"><li>Shaik Riyazuddin</li></a>
-  <a href="https://github.com/Suraj8007"><li>Suraj Ughade</li></a>
-  <a href="https://github.com/sarang999"><li>Sarang Chaudhary</li></a>
-   <a href="https://github.com/Sweta-Swarnakar"><li>Sweta Swarnakar</li></a>
+      <a href="https://github.com/Suraj8007"><li>Suraj Ughade</li></a>
+      <a href="https://github.com/Sweta-Swarnakar"><li>Sweta Swarnakar</li></a>
       <a href="https://github.com/akasaurabhverma"><li>Saurabh Verma</li></a>
     </ul>
+ <hr>
     </div>
 
 # Images
 
 ### Home page
 
-![image](https://github.com/sarang999/Myntra_Clone/blob/main/myntra-master/src/readmeimages/home.png?raw=true)
+![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/home.png?raw=true)
 
 ### Login Page
 
-![image](https://github.com/sarang999/Myntra_Clone/blob/main/myntra-master/src/readmeimages/login.png?raw=true)
+![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/login.png?raw=true)
 ---
-<!-- ![image](https://github.com/sarang999/Myntra_Clone/blob/main/myntra-master/src/readmeimages/login1.png?raw=true)
+![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/login1.png?raw=true)
 ---
-![image](https://github.com/sarang999/Myntra_Clone/blob/main/myntra-master/src/readmeimages/otp.png?raw=true)
+![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/otp.png?raw=true)
 ---
-![image](https://github.com/sarang999/Myntra_Clone/blob/main/myntra-master/src/readmeimages/login2.png?raw=true) -->
+![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/login2.png?raw=true)
 
 ### Product page
 
-![image](https://github.com/sarang999/Myntra_Clone/blob/main/myntra-master/src/readmeimages/prod.png?raw=true)
+![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/prod.png?raw=true)
 
 ### Product details page
 
-![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/prodDetails.png?raw=true)
+![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/proddetails%20(2).png?raw=true)
+---
+![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/proddetails1%20(2).png?raw=true)
 
 ### Wishlist page
 
 ![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/wish1.png?raw=true)
 ---
+![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/wish2.png?raw=true)
+---
 ![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/wish3.png?raw=true)
+---
+### Add to Bag page
 
-### Cart page
-![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/cart.png?raw=true)
- ---
- ### Checkout page
+![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/bag1%20(2).png?raw=true)
 
- ![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/addPay.png?raw=true)
- 
+
+### Address and payment page
+
+![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/address%20(2).png?raw=true)
+
+
