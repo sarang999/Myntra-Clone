@@ -76,11 +76,11 @@ Styled Components: Styled Components
 
 ### Home page
 
-![image](https://github.com/sarang999/Myntra_Clone/blob/main/myntra-master/src/readmeimages/home.png?raw=true)
+![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/home.png?raw=true)
 
 ### Login Page
 
-![image](https://github.com/sarang999/Myntra_Clone/blob/main/myntra-master/src/readmeimages/login.png?raw=true)
+![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/login.png?raw=true)
 ---
 <!-- ![image](https://github.com/sarang999/Myntra_Clone/blob/main/myntra-master/src/readmeimages/login1.png?raw=true)
 ---
@@ -90,7 +90,7 @@ Styled Components: Styled Components
 
 ### Product page
 
-![image](https://github.com/sarang999/Myntra_Clone/blob/main/myntra-master/src/readmeimages/prod.png?raw=true)
+![image](https://github.com/ShaikRiyazuddin/Myntra_Clone/blob/main/myntra-master/src/readmeimages/prod.png?raw=true)
 
 ### Product details page
 
